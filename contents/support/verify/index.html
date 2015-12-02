@@ -27,8 +27,8 @@
             </h1>
             <br>
 
-            <div id="info" class="alert alert-info" role="alert">
-                {{ result }}
+            <div class="alert" ng-class="resultType" role="alert">
+                <strong>{{ resultTitle }}</strong><br>{{ resultMessage }}
             </div>
             <button ng-click="close()"
                     ng-hide="!result"
@@ -45,10 +45,13 @@
         $scope.accessToken = getURLParameter('access_token');
         $scope.authToken = getURLParameter('auth_token');
         if (!$scope.endPoint || !$scope.accessToken || !$scope.authToken) {
-            $scope.result = '파라메터가 잘못되어 기능이 동작하지 않습니다';
+            $scope.resultType = 'alert-danger';
+            $scope.resultTitle = '에러';
+            $scope.resultMessage = '파라메터가 잘못되어 기능이 동작하지 않습니다';
             return;
         }
-        $scope.result = '인증이 진행중입니다. 잠시만 기다려 주세요...'
+        $scope.resultType = 'alert-info';
+        $scope.resultMessage = '인증이 진행중입니다. 잠시만 기다려 주세요...'
         // Functions
         $scope.verify = function () {
             $http({
@@ -59,15 +62,21 @@
                     'Content-Type': "application/json; charset=utf8"
                 },
                 data: {
-                    authToken: authToken
+                    authToken: $scope.authToken
                 }
             }).then(function success() {
-                $scope.result = '인증이 완료되었습니다! 앱에서 다시 로그인해 주세요!';
+                $scope.resultType = 'alert-success';
+                $scope.resultTitle = '인증완료';
+                $scope.resultMessage = '감사합니다. 앱에서 다시 로그인해 주세요!';
             }, function error(response) {
                 if (500 > response.status) {
-                    $scope.result = '인증한지 너무 오래되었거나 요청이 잘못 되었습니다. 다시 이메일을 요청해 주세요!';
+                    $scope.resultType = 'alert-warning';
+                    $scope.resultTitle = '죄송합니다';
+                    $scope.resultMessage = '메일이 너무 오래되었거나 요청에 문제가 있습니다... 다시 인증 이메일을 요청해 주세요!';
                 } else {
-                    $scope.result = '서버 문제로 인해 인증에 실패하였습니다. 캐빗팀에 연락해 주세요 ㅜㅜ';
+                    $scope.resultType = 'alert-warning';
+                    $scope.resultTitle = '죄송합니다';
+                    $scope.resultMessage = '서버 문제로 인해 인증에 실패하였습니다. 캐빗팀에 연락해 주세요 ㅜㅜ';
                 }
             });
         };
