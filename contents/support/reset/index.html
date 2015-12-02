@@ -23,23 +23,24 @@
 
         <h2 class="form-signin-heading">비밀번호 변경</h2>
 
-        <p>아래 창에 새로운 비밀번호를 입력한 후 등록을 눌러주시면 비번이 변경됩니다. 비번을 다시 변경하시려면 앱에서 비번 변경을 새 요청해 주세요</p>
+        <p>아래 창에 새로운 비밀번호를 입력한 후 등록을 눌러주시면 비번이 변경됩니다. 비번을 다시 변경하시려면 앱에서 비번 변경을 다시 요청해 주세요</p>
 
-        <div class="alert alert-danger" role="alert" ng-show="!endPoint || !accessToken">
-            <strong>에러!</strong> 파라메터가 잘못되었습니다.<br>비번변경 기능에 문제가 발생했습니다
+        <div class="alert alert-danger" role="alert" ng-show="error">
+            <strong>죄송합니다</strong> {{ error }}
         </div>
-        <div class="alert alert-success" role="alert" ng-show="success">
-            {{ success }}
-        </div>
-        <div class="alert alert-warn" role="alert" ng-show="warn">
-            {{ warn }}
-        </div>
-        <input ng-disabled="!endPoint || !accessToken" ng-model="newPassword"
-               ng-hide="success || warn"
+        <input ng-disabled="error" ng-model="newPassword"
+               ng-hide="result"
                class="form-control" type="password" placeholder="새 비밀번호" required>
-        <button ng-disabled="!endPoint || !accessToken" ng-click="confirm()"
-                ng-hide="success || warn"
+        <button ng-disabled="error" ng-click="confirm()"
+                ng-hide="result"
                 class="btn btn-lg btn-primary btn-block">등록
+        </button>
+        <div class="alert alert-info" role="alert" ng-show="result">
+            {{ result }}
+        </div>
+        <button ng-click="close()"
+                ng-hide="!result"
+                class="btn btn-lg btn-default btn-block">확인
         </button>
     </form>
 </div>
@@ -49,6 +50,9 @@
         // Parameters
         $scope.endPoint = getURLParameter('end_point');
         $scope.accessToken = getURLParameter('access_token');
+        if (!$scope.endPoint || !$scope.accessToken) {
+            $scope.error = '파라메터가 잘못되어 기능이 동작하지 않습니다';
+        }
         // Functions
         $scope.confirm = function () {
             $http({
@@ -62,13 +66,12 @@
                     password: $scope.newPassword
                 }
             }).then(function success(response) {
-                $scope.success = '비밀번호 변경을 완료했습니다: 이메일 ' + response.data.email + ' 로 앱에서 다시 로그인해 주세요.';
+                $scope.result = '비밀번호 변경을 완료했습니다: 이메일 ' + response.data.email + ' 로 앱에서 다시 로그인해 주세요.';
             }, function error(response) {
                 if (401 === response.status) {
-                    $scope.warn = '토큰 유효기간이 지나 비번을 바꿀수가 없습니다. 새로 비밀번호 변경 이메일을 요청해 주세요.';
+                    $scope.result = '인증 토큰이 잘못되어 비번을 바꿀수가 없습니다. 새로 비밀번호 변경 이메일을 요청해 주세요.';
                 } else {
-                    console.log(response)
-                    $scope.warn = '비밀번호 변경 실패: ' + response.statusText;
+                    $scope.result = '다음과 같은 이유로 실패: ' + response.statusText;
                 }
             });
         };
