@@ -1,0 +1,82 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../resources/styles/main.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="../../../resources/scripts/util.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div ng-app="passwordResetApp" ng-controller="formCtrl" class="container">
+    <form class="form-signin text-center">
+        <img src="../../../resources/images/icon.png" width="130" height="130"/>
+
+        <h2 class="form-signin-heading">비밀번호 변경</h2>
+
+        <p>아래 창에 새로운 비밀번호를 입력한 후 등록을 눌러주시면 비번이 변경됩니다. 비번을 다시 변경하시려면 앱에서 비번 변경을 새 요청해 주세요</p>
+
+        <div class="alert alert-danger" role="alert" ng-show="!endPoint || !accessToken">
+            <strong>에러!</strong> 파라메터가 잘못되었습니다.<br>비번변경 기능에 문제가 발생했습니다
+        </div>
+        <div class="alert alert-success" role="alert" ng-show="success">
+            {{ success }}
+        </div>
+        <div class="alert alert-warn" role="alert" ng-show="warn">
+            {{ warn }}
+        </div>
+        <input ng-disabled="!endPoint || !accessToken" ng-model="newPassword"
+               ng-hide="success || warn"
+               class="form-control" type="password" placeholder="새 비밀번호" required>
+        <button ng-disabled="!endPoint || !accessToken" ng-click="confirm()"
+                ng-hide="success || warn"
+                class="btn btn-lg btn-primary btn-block">등록
+        </button>
+    </form>
+</div>
+<script>
+    var app = angular.module('passwordResetApp', []);
+    app.controller('formCtrl', function ($scope, $http) {
+        // Parameters
+        $scope.endPoint = getURLParameter('end_point');
+        $scope.accessToken = getURLParameter('access_token');
+        // Functions
+        $scope.confirm = function () {
+            $http({
+                method: 'PUT',
+                url: $scope.endPoint + '/User',
+                headers: {
+                    'Authorization': 'Bearer ' + $scope.accessToken,
+                    'Content-Type': "application/json; charset=utf8"
+                },
+                data: {
+                    password: $scope.newPassword
+                }
+            }).then(function success(response) {
+                $scope.success = '비밀번호 변경을 완료했습니다: 이메일 ' + response.data.email + ' 로 앱에서 다시 로그인해 주세요.';
+            }, function error(response) {
+                if (401 === response.status) {
+                    $scope.warn = '토큰 유효기간이 지나 비번을 바꿀수가 없습니다. 새로 비밀번호 변경 이메일을 요청해 주세요.';
+                } else {
+                    console.log(response)
+                    $scope.warn = '비밀번호 변경 실패: ' + response.statusText;
+                }
+            });
+        };
+        $scope.close = function () {
+            window.close();
+        }
+    });
+</script>
+
+</body>
+</html>
