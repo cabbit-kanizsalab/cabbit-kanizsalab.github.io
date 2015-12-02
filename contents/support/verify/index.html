@@ -7,6 +7,7 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="../../../resources/styles/main.css" rel="stylesheet">
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="../../../resources/scripts/util.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -16,8 +17,8 @@
 
 </head>
 <body>
-<div class="container">
-    <div class="main text-center">
+<div ng-app="emailVerifyApp" ng-controller="formCtrl" class="container">
+    <div class="main-center text-center">
         <img src="../../../resources/images/icon.png" width="130" height="130"/>
 
         <div>
@@ -26,64 +27,55 @@
             </h1>
             <br>
 
-            <div id="info" class="alert alert-info" role="alert">인증이 진행중입니다. 잠시만 기다려 주세요...</div>
-            <div id="success" class="alert alert-success hidden" role="alert">인증이 완료되었습니다! 앱에서 다시 로그인해 주세요!</div>
-            <div id="fail" class="alert alert-danger hidden" role="alert">서버 문제로 인해 인증에 실패하였습니다. 캐빗팀에 연락해 주세요 ㅜㅜ</div>
-            <div id="warn" class="alert alert-warning hidden" role="alert">인증한지 너무 오래되었거나 요청이 잘못 되었습니다. 다시 이메일을 요청해
-                주세요!
+            <div id="info" class="alert alert-info" role="alert">
+                {{ result }}
             </div>
+            <button ng-click="close()"
+                    ng-hide="!result"
+                    class="btn btn-lg btn-default btn-block">확인
+            </button>
         </div>
     </div>
 </div>
 <script>
-    function getURLParameter(name) {
-        var ret = null;
-        var nowAddress = unescape(window.location.href);
-        var parameters = (nowAddress.slice(nowAddress.indexOf("?") + 1, nowAddress.length)).split("&");
-        for (var i = 0; i < parameters.length; i++) {
-            var varName = parameters[i].split("=")[0];
-            if (varName.toUpperCase() === name.toUpperCase()) {
-                ret = parameters[i].split("=")[1];
-                break;
-            }
+    var app = angular.module('emailVerifyApp', []);
+    app.controller('formCtrl', function ($scope, $http) {
+        // Parameters
+        $scope.endPoint = getURLParameter('end_point');
+        $scope.accessToken = getURLParameter('access_token');
+        $scope.authToken = getURLParameter('auth_token');
+        if (!$scope.endPoint || !$scope.accessToken || !$scope.authToken) {
+            $scope.result = '파라메터가 잘못되어 기능이 동작하지 않습니다';
+            return;
         }
-        return ret;
-    }
-
-    function verify() {
-        var host = 'https://api.pooling.com';
-        if ('remote' === getURLParameter('dev')) {
-            host = 'https://test.yimocall.com/pooling';
-        } else if ('local' === getURLParameter('dev')) {
-            host = 'http://localhost:8100';
+        $scope.result = '인증이 진행중입니다. 잠시만 기다려 주세요...'
+        // Functions
+        $scope.verify = function () {
+            $http({
+                method: 'PUT',
+                url: $scope.endPoint + '/EmailAuth/verify',
+                headers: {
+                    'Authorization': 'Bearer ' + $scope.accessToken,
+                    'Content-Type': "application/json; charset=utf8"
+                },
+                data: {
+                    authToken: authToken
+                }
+            }).then(function success() {
+                $scope.result = '인증이 완료되었습니다! 앱에서 다시 로그인해 주세요!';
+            }, function error(response) {
+                if (500 > response.status) {
+                    $scope.result = '인증한지 너무 오래되었거나 요청이 잘못 되었습니다. 다시 이메일을 요청해 주세요!';
+                } else {
+                    $scope.result = '서버 문제로 인해 인증에 실패하였습니다. 캐빗팀에 연락해 주세요 ㅜㅜ';
+                }
+            });
+        };
+        $scope.close = function () {
+            window.close();
         }
-        var authToken = getURLParameter('auth_token');
-        $.ajax({
-                    url: host + '/EmailAuth/verify',
-                    type: 'PUT',
-                    dataType: 'json',
-                    headers: {
-                        'Authorization': 'Bearer ' + getURLParameter('access_token'),
-                        'Content-Type': "application/json; charset=utf8"
-                    },
-                    data: JSON.stringify({
-                        authToken: authToken
-                    })
-                })
-                .done(function (data) {
-                    $("#info").addClass("hidden");
-                    $("#success").removeClass("hidden");
-                })
-                .fail(function (err) {
-                    $("#info").addClass("hidden");
-                    if (500 > err.status) {
-                        $("#warn").removeClass("hidden");
-                    } else {
-                        $("#fail").removeClass("hidden");
-                    }
-                });
-    }
-    verify();
+        $scope.verify();
+    });
 </script>
 
 </body>

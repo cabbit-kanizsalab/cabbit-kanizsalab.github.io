@@ -52,6 +52,7 @@
         $scope.accessToken = getURLParameter('access_token');
         if (!$scope.endPoint || !$scope.accessToken) {
             $scope.error = '파라메터가 잘못되어 기능이 동작하지 않습니다';
+            return;
         }
         // Functions
         $scope.confirm = function () {
