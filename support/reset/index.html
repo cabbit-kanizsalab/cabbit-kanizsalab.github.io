@@ -1,0 +1,83 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/style/main.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div class="container">
+    <form class="form-signin text-center">
+        <img src="/images/icon.png" width="130" height="130"/>
+
+        <h2 class="form-signin-heading">비밀번호 변경</h2>
+        <input id="password" class="form-control" type="password" placeholder="새 비밀번호" required>
+        <input type="button" class="btn btn-lg btn-primary btn-block" id="submit" value="등록">
+    </form>
+</div>
+<script>
+    function getURLParameter(name) {
+        var ret = null;
+        var nowAddress = unescape(window.location.href);
+        var parameters = (nowAddress.slice(nowAddress.indexOf("?") + 1, nowAddress.length)).split("&");
+        for (var i = 0; i < parameters.length; i++) {
+            var varName = parameters[i].split("=")[0];
+            if (varName.toUpperCase() === name.toUpperCase()) {
+                ret = parameters[i].split("=")[1];
+                break;
+            }
+        }
+        return ret;
+    }
+
+    function postNewPassword() {
+        var host = 'https://api.pooling.com';
+        if ('remote' === getURLParameter('dev')) {
+            host = 'https://test.yimocall.com/pooling';
+        } else if ('local' === getURLParameter('dev')) {
+            host = 'http://localhost:8100';
+        }
+        var password = $('#password').val();
+        $.ajax({
+                    url: host + '/User',
+                    type: 'PUT',
+                    dataType: 'json',
+                    headers: {
+                        'Authorization': 'Bearer ' + getURLParameter('access_token'),
+                        'Content-Type': "application/json; charset=utf8"
+                    },
+                    data: JSON.stringify({
+                        password: password
+                    })
+                })
+                .done(function (data) {
+                    alert('비밀번호 변경을 완료했습니다: 이메일 ' + data.email + ' 로 앱에서 다시 로그인해 주세요.');
+                    window.close();
+                })
+                .fail(function (err) {
+                    if (401 === err.status) {
+                        alert('토큰 유효기간이 지나 비번을 바꿀수가 없습니다. 새로 비밀번호 변경 이메일을 요청해 주세요.');
+                        window.close();
+                    } else {
+                        alert('비밀번호 변경 실패: ' + err.statusText);
+                    }
+                });
+    }
+    $('#submit').click(function () {
+        postNewPassword();
+    });
+</script>
+
+</body>
+</html>
