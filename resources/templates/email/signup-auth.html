@@ -1,11 +1,11 @@
-<img src="<%= data.url.web.resources %>/images/icon.png" width="130" height="130"/><br>
+<img src="<%= data.web.host %>/resources/images/icon.png" width="130" height="130"/><br>
 <h3>이메일 인증 요청</h3><br>
 안녕하세요! <%= data.user.Passenger.username %> 님 저희 서비스를 이용해주셔서 감사합니다.
 저희 서비스는 서로 믿고 탈수 있는 서비스가 되기 위해서 이메일 인증을 거치고 있습니다. 인증을 완료하시면 바로 저희 서비스를 이용하실수 있습니다.<br>
 아래 링크를 클릭하시면 비밀번호를 변경하실수 있는 화면으로 이동합니다.
 <br><br>
-<a href="<%= data.url.web.resources %>/pooling/support/verify/?access_token=<%= data.user.access_token %>
-    &amp;auth_token=<%= data.user.auth_token %>&amp;host=<%= data.url.api.host %>" target="_blank">이메일 인증하러 가기</a>
+<a href="<%= data.web.host %>/app/support/verify/?access_token=<%= data.user.access_token %>
+    &amp;auth_token=<%= data.user.auth_token %>&amp;host=<%= data.api.host %>" target="_blank">이메일 인증하러 가기</a>
 <br><br>
 <hr>
-<a href="<%= data.url.web.host %>"><%= data.url.web.host %></a>
+<a href="<%= data.web.host %>"><%= data.web.host %></a>
