@@ -71,11 +71,12 @@
                 if (401 === response.status) {
                     $scope.resultType = 'alert-warning';
                     $scope.resultTitle = '죄송합니다';
-                    $scope.resultMessage = '인증 토큰이 잘못되어 비번을 바꿀수가 없습니다. 새로 비밀번호 변경 이메일을 요청해 주세요.';
+                    $scope.resultMessage = '비번변경 유효기간이 지난것 같습니다. 다시 이메일을 요청해 주세요!';
                 } else {
-                    $scope.resultType = 'alert-warning';
+                    $scope.resultType = 'alert-danger';
                     $scope.resultTitle = '죄송합니다';
-                    $scope.resultMessage = '다음과 같은 이유로 실패: ' + response.statusText;
+                    $scope.resultMessage = '서버 문제로 인해 인증에 실패하였습니다. 캐빗팀에 연락해 주세요 ㅜㅜ';
+                    console.log('Failed', response);
                 }
             });
         };
