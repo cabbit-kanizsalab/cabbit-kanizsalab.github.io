@@ -10,6 +10,9 @@ function getURLParameter(name) {
         var varName = parameters[i].split("=")[0];
         if (varName.toUpperCase() === name.toUpperCase()) {
             ret = parameters[i].split("=")[1];
+            if (typeof(ret) === 'string') {
+                ret = ret.trim();
+            }
             break;
         }
     }
