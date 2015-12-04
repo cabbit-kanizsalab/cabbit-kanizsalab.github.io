@@ -41,10 +41,10 @@
     var app = angular.module('emailVerifyApp', []);
     app.controller('formCtrl', function ($scope, $http) {
         // Parameters
-        $scope.endPoint = getURLParameter('end_point');
+        $scope.host = getURLParameter('host');
         $scope.accessToken = getURLParameter('access_token');
         $scope.authToken = getURLParameter('auth_token');
-        if (!$scope.endPoint || !$scope.accessToken || !$scope.authToken) {
+        if (!$scope.host || !$scope.accessToken || !$scope.authToken) {
             $scope.resultType = 'alert-danger';
             $scope.resultTitle = '에러';
             $scope.resultMessage = '파라메터가 잘못되어 기능이 동작하지 않습니다';
@@ -56,7 +56,7 @@
         $scope.verify = function () {
             $http({
                 method: 'PUT',
-                url: $scope.endPoint + '/EmailAuth/verify',
+                url: $scope.host + '/EmailAuth/verify',
                 headers: {
                     'Authorization': 'Bearer ' + $scope.accessToken,
                     'Content-Type': "application/json; charset=utf8"

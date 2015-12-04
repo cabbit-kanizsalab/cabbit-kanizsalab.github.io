@@ -43,9 +43,9 @@
     var app = angular.module('passwordResetApp', []);
     app.controller('formCtrl', function ($scope, $http) {
         // Parameters
-        $scope.endPoint = getURLParameter('end_point');
+        $scope.host = getURLParameter('host');
         $scope.accessToken = getURLParameter('access_token');
-        if (!$scope.endPoint || !$scope.accessToken) {
+        if (!$scope.host || !$scope.accessToken) {
             $scope.resultType = 'alert-danger';
             $scope.resultTitle = '에러';
             $scope.resultMessage = '파라메터가 잘못되어 기능이 동작하지 않습니다';
@@ -55,7 +55,7 @@
         $scope.confirm = function () {
             $http({
                 method: 'PUT',
-                url: $scope.endPoint + '/User',
+                url: $scope.host + '/User',
                 headers: {
                     'Authorization': 'Bearer ' + $scope.accessToken,
                     'Content-Type': "application/json; charset=utf8"
