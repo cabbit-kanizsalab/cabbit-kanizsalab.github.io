@@ -1,7 +1,97 @@
 [
   {
+    "name": "농협",
+    "country": "ko",
+    "code": "011"
+  },
+  {
+    "name": "신협",
+    "country": "ko",
+    "code": "048"
+  },
+  {
+    "name": "기업은행",
+    "country": "ko",
+    "code": "003"
+  },
+  {
+    "name": "우체국",
+    "country": "ko",
+    "code": "071"
+  },
+  {
+    "name": "새마을금고",
+    "country": "ko",
+    "code": "045"
+  },
+  {
+    "name": "부산은행",
+    "country": "ko",
+    "code": "032"
+  },
+  {
+    "name": "경남은행",
+    "country": "ko",
+    "code": "039"
+  },
+  {
+    "name": "광주은행",
+    "country": "ko",
+    "code": "034"
+  },
+  {
+    "name": "전북은행",
+    "country": "ko",
+    "code": "037"
+  },
+  {
+    "name": "SC은행",
+    "country": "ko",
+    "code": "023"
+  },
+  {
+    "name": "대구은행",
+    "country": "ko",
+    "code": "031"
+  },
+  {
+    "name": "수협",
+    "country": "ko",
+    "code": "007"
+  },
+  {
+    "name": "산업은행",
+    "country": "ko",
+    "code": "002"
+  },
+  {
     "name": "국민은행",
-    "code": "004",
-    "country": "ko"
+    "country": "ko",
+    "code": "004"
+  },
+  {
+    "name": "우리은행",
+    "country": "ko",
+    "code": "020"
+  },
+  {
+    "name": "신한은행",
+    "country": "ko",
+    "code": "088"
+  },
+  {
+    "name": "하나은행",
+    "country": "ko",
+    "code": "081"
+  },
+  {
+    "name": "외환은행",
+    "country": "ko",
+    "code": "005"
+  },
+  {
+    "name": "씨티은행",
+    "country": "ko",
+    "code": "027"
   }
 ]
