@@ -1,0 +1,27 @@
+[
+  {
+    "name": "캐빗 테스터",
+    "domain": "cabbit.io",
+    "group": "korea/service/cabbit"
+  },
+  {
+    "name": "카니자랩 테스터",
+    "domain": "kanizsalab.com",
+    "group": "korea/company/kanizsalab"
+  },
+  {
+    "name": "서울대학교",
+    "domain": "snu.ac.kr",
+    "group": "korea/univ/seoul"
+  },
+  {
+    "name": "카이스트",
+    "domain": "kaist.ac.kr",
+    "group": "korea/univ/kaist"
+  },
+  {
+    "name": "울산과기원",
+    "domain": "unist.ac.kr",
+    "group": "korea/univ/unist"
+  }
+]
