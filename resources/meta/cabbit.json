@@ -1,0 +1,18 @@
+{
+  "server": {
+    "payment": {
+      "cycle": 86400
+    },
+    "payback": {
+      "cycle": 600
+    }
+  },
+  "client": {
+    "android": {
+      "version": "0.1.0"
+    },
+    "ios": {
+      "version": "0.1.0"
+    }
+  }
+}
