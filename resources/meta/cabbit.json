@@ -1,4 +1,5 @@
 {
+  "name": "cabbit",
   "server": {
     "payment": {
       "cycle": 86400
