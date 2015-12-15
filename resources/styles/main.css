@@ -1,44 +1,492 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html, body {
+	height: 100%;
+}
+
 body {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: #eee;
+    background: #00BFA5;
+    color: #fff;
 }
 
-.main-center {
-    max-width: 360px;
-    padding: 15px;
-    margin: 0 auto;
+a {
+	color: #fff;
+	text-decoration: underline;
 }
 
-.form-signin {
-    max-width: 360px;
-    padding: 15px;
-    margin: 0 auto;
+.wrapper {
+	width: 320px;
+	margin: 0 auto;
+	position: relative;
 }
 
-.form-signin .form-signin-heading,
-.form-signin .checkbox {
-    margin-bottom: 10px;
+.rabbit {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	top: 180px;
+	transform: translate(-50%, -50%);
 }
 
-.form-signin .checkbox {
-    font-weight: normal;
+.content {
+	/*display: table;*/
+	width: 100%;
+	height: 480px;
+	position: relative;
 }
 
-.form-signin .form-control {
-    position: relative;
+.content .inner-content {
+	position: absolute;
+	top:  50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.content .inner-content .logo {
+	margin: 30px auto;
+}
+
+.content .inner-content .comming-soon {
+	margin: 0 auto;
+}
+
+.content .inner-content .email {
+	text-align: center;
+	font-size: 20px;
+	padding: 20px;
+	display: block;
+}
+
+.footer {
+	margin: 30px 20px 0 20px;
+	padding: 10px 0;
+	color: #98EFE3;
+	/*position: absolute;*/
+	/*bottom: 0;*/
+	/*left: 0;*/
+	font-size: 10px;
+	border-top: 1px solid #98EFE3;
+}
+
+.footer a {
+	color: #98EFE3;
+}
+
+.footer p {
+	margin: 3px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
     height: auto;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 10px;
-    font-size: 16px;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
 }
 
-.form-signin .form-control:focus {
-    z-index: 2;
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
 }
 
-.form-signin input[type="password"] {
-    margin-bottom: 10px;
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   Images
+   ========================================================================== */
+
+.rabbit {
+	width: 744px;
+	height: 476px;
+	
+	background-image: url(../images/Rabbit~Mobile.png);
+	background-size: 744px 476px;
+}
+
+.logo {
+	width: 207px;
+	height: 268px;
+	background-image: url(../images/Logo.png);
+	background-size: 207px 268px;
+}
+
+.comming-soon {
+	width: 205px;
+	height: 42px;
+	background-image: url(../images/CommingSoon~Mobile.png);
+	background-size: 205px 42px;
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) {
+	.rabbit {
+		background-image: url(../images/Rabbit~Mobile@2x.png);
+	}
+	.logo {
+		background-image: url(../images/Logo@2x.png);
+	}
+	.comming-soon {
+		background-image: url(../images/CommingSoon~Mobile@2x.png);
+	}
+}
+
+@media (min-width: 600px) {
+	.rabbit {
+		width: 1805px;
+		height: 1148px;
+		background-image: url(../images/Rabbit.png);
+		background-size: 1805px 1148px;
+		top: 460px;
+	}
+	.comming-soon {
+		width: 307px;
+		height: 62px;
+		background-image: url(../images/CommingSoon.png);
+		background-size: 307px 62px;
+	}
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 2) and (min-width: 600px), 
+(min-resolution: 192dpi) and (min-width: 600px) {
+	.rabbit {
+		background-image: url(../images/Rabbit@2x.png);
+	}
+	.comming-soon {
+		background-image: url(../images/CommingSoon@2x.png);
+	}
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 3), 
+(min-resolution: 288dpi) {
+	.rabbit {
+		background-image: url(../images/Rabbit~Mobile@3x.png);
+	}
+	.logo {
+		background-image: url(../images/Logo@3x.png);
+	}
+	.comming-soon {
+		background-image: url(../images/CommingSoon~Mobile@3x.png);
+	}
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 3) and (min-width: 600px), 
+(min-resolution: 288dpi) and (min-width: 600px) {
+	.rabbit {
+		background-image: url(../images/Rabbit@3x.png);
+	}
+	.comming-soon {
+		background-image: url(../images/CommingSoon@3x.png);
+	}
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+   
+@media only screen and (min-width: 400px) {
+	.wrapper {
+		width: 360px;
+		height: 100%;
+	}
+	
+	.content {
+		height: 100%;
+	}
+	
+	.content .inner-content {
+		top: 40%;
+	}
+	
+	.footer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		font-size: 12px;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.wrapper {
+		width: 540px;
+	}
+	
+	.email {
+		font-size: 24px;
+	}
+}
+   
+@media only screen and (min-width: 768px) {
+	.wrapper {
+		width: 768px;
+	}
+	
+	.email {
+		font-size: 24px;
+	}
+}
+
+@media only screen and (min-width: 940px) {
+	.wrapper {
+		width: 940px;
+	}
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
 }
