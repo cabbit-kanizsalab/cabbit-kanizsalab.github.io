@@ -275,7 +275,7 @@ a {
 .logo {
 	width: 207px;
 	height: 268px;
-	background-image: url(../images/logo.png);
+	background-image: url(../images/CabbitLogo.png);
 	background-size: 207px 268px;
 }
 
@@ -293,7 +293,7 @@ a {
 		background-image: url(../images/Rabbit~Mobile@2x.png);
 	}
 	.logo {
-		background-image: url(../images/logo@2x.png);
+		background-image: url(../images/CabbitLogo@2x.png);
 	}
 	.comming-soon {
 		background-image: url(../images/CommingSoon~Mobile@2x.png);
@@ -334,7 +334,7 @@ a {
 		background-image: url(../images/Rabbit~Mobile@3x.png);
 	}
 	.logo {
-		background-image: url(../images/logo@3x.png);
+		background-image: url(../images/CabbitLogo@3x.png);
 	}
 	.comming-soon {
 		background-image: url(../images/CommingSoon~Mobile@3x.png);
