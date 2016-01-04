@@ -2,10 +2,10 @@
   "name": "cabbit",
   "server": {
     "payment": {
-      "cycle": 86400
+      "cycle": 1440
     },
     "payback": {
-      "cycle": 600
+      "cycle": 15
     }
   },
   "client": {
