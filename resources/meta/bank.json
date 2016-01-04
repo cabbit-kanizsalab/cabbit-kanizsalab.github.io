@@ -1,97 +1,222 @@
 [
   {
-    "name": "농협",
+    "code": "2",
     "country": "korea",
-    "code": "011"
+    "name": "KDB산업"
   },
   {
-    "name": "신협",
+    "code": "3",
     "country": "korea",
-    "code": "048"
+    "name": "IBK기업"
   },
   {
-    "name": "기업은행",
+    "code": "4",
     "country": "korea",
-    "code": "003"
+    "name": "KB국민"
   },
   {
-    "name": "우체국",
+    "code": "5",
     "country": "korea",
-    "code": "071"
+    "name": "외환"
   },
   {
-    "name": "새마을금고",
+    "code": "7",
     "country": "korea",
-    "code": "045"
+    "name": "수협"
   },
   {
-    "name": "부산은행",
+    "code": "11 ",
     "country": "korea",
-    "code": "032"
+    "name": "NH농협"
   },
   {
-    "name": "경남은행",
+    "code": "20 ",
     "country": "korea",
-    "code": "039"
+    "name": "우리"
   },
   {
-    "name": "광주은행",
+    "code": "23 ",
     "country": "korea",
-    "code": "034"
+    "name": "SC"
   },
   {
-    "name": "전북은행",
+    "code": "26 ",
     "country": "korea",
-    "code": "037"
+    "name": "신한"
   },
   {
-    "name": "SC은행",
+    "code": "27 ",
     "country": "korea",
-    "code": "023"
+    "name": "씨티"
   },
   {
-    "name": "대구은행",
+    "code": "31 ",
     "country": "korea",
-    "code": "031"
+    "name": "대구"
   },
   {
-    "name": "수협",
+    "code": "32 ",
     "country": "korea",
-    "code": "007"
+    "name": "부산"
   },
   {
-    "name": "산업은행",
+    "code": "34 ",
     "country": "korea",
-    "code": "002"
+    "name": "광주"
   },
   {
-    "name": "국민은행",
+    "code": "35 ",
     "country": "korea",
-    "code": "004"
+    "name": "제주"
   },
   {
-    "name": "우리은행",
+    "code": "37 ",
     "country": "korea",
-    "code": "020"
+    "name": "전북"
   },
   {
-    "name": "신한은행",
+    "code": "39 ",
     "country": "korea",
-    "code": "088"
+    "name": "경남"
   },
   {
-    "name": "하나은행",
+    "code": "45 ",
     "country": "korea",
-    "code": "081"
+    "name": "새마을"
   },
   {
-    "name": "외환은행",
+    "code": "48 ",
     "country": "korea",
-    "code": "005"
+    "name": "신협"
   },
   {
-    "name": "씨티은행",
+    "code": "71 ",
     "country": "korea",
-    "code": "027"
+    "name": "우체국"
+  },
+  {
+    "code": "81 ",
+    "country": "korea",
+    "name": "하나"
+  },
+  {
+    "code": "209",
+    "country": "korea",
+    "name": "유안타"
+  },
+  {
+    "code": "218",
+    "country": "korea",
+    "name": "현대"
+  },
+  {
+    "code": "230",
+    "country": "korea",
+    "name": "미래에셋"
+  },
+  {
+    "code": "238",
+    "country": "korea",
+    "name": "대우"
+  },
+  {
+    "code": "240",
+    "country": "korea",
+    "name": "삼성"
+  },
+  {
+    "code": "243",
+    "country": "korea",
+    "name": "한국투자"
+  },
+  {
+    "code": "247",
+    "country": "korea",
+    "name": "NH투자"
+  },
+  {
+    "code": "261",
+    "country": "korea",
+    "name": "교보"
+  },
+  {
+    "code": "262",
+    "country": "korea",
+    "name": "하이투자"
+  },
+  {
+    "code": "263",
+    "country": "korea",
+    "name": "HMC투자"
+  },
+  {
+    "code": "264",
+    "country": "korea",
+    "name": "키움"
+  },
+  {
+    "code": "265",
+    "country": "korea",
+    "name": "이베스트"
+  },
+  {
+    "code": "266",
+    "country": "korea",
+    "name": "SK"
+  },
+  {
+    "code": "267",
+    "country": "korea",
+    "name": "대신"
+  },
+  {
+    "code": "268",
+    "country": "korea",
+    "name": "아이엠투자"
+  },
+  {
+    "code": "269",
+    "country": "korea",
+    "name": "한화투자"
+  },
+  {
+    "code": "270",
+    "country": "korea",
+    "name": "하나대투"
+  },
+  {
+    "code": "278",
+    "country": "korea",
+    "name": "신한금융"
+  },
+  {
+    "code": "279",
+    "country": "korea",
+    "name": "동부"
+  },
+  {
+    "code": "280",
+    "country": "korea",
+    "name": "유진투자"
+  },
+  {
+    "code": "287",
+    "country": "korea",
+    "name": "메리츠종금"
+  },
+  {
+    "code": "290",
+    "country": "korea",
+    "name": "부국"
+  },
+  {
+    "code": "291",
+    "country": "korea",
+    "name": "신영"
+  },
+  {
+    "code": "292",
+    "country": "korea",
+    "name": "LIG투자​"
   }
 ]
