@@ -254,16 +254,20 @@ a {
 }
 
 .web {
-    width: 1080px;
-    height: 4470px;
-    background-image: url(../images/CabbitWeb.png);
-    background-size: 1080px 4470px;
+    width: 320px;
+    height: 1324px;
+    background-image: url(../images/CabbitWeb~Mobile.png);
+    background-size: 320px 1324px;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
     .rabbit {
         background-image: url(../images/Rabbit~Mobile@2x.png);
+    }
+
+    .rabbit {
+        background-image: url(../images/CabbitWeb~Mobile@2x.png);
     }
 }
 
@@ -274,6 +278,13 @@ a {
         background-image: url(../images/Rabbit.png);
         background-size: 1805px 1148px;
         top: 460px;
+    }
+
+    .web {
+        width: 1500px;
+        height: 6208px;
+        background-image: url(../images/CabbitWeb.png);
+        background-size: 1500px 6208px;
     }
 }
 
@@ -288,6 +299,10 @@ a {
 (min-resolution: 288dpi) {
     .rabbit {
         background-image: url(../images/Rabbit~Mobile@3x.png);
+    }
+
+    .rabbit {
+        background-image: url(../images/CabbitWeb~Mobile@3x.png);
     }
 }
 
