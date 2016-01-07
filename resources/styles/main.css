@@ -132,17 +132,13 @@ a {
 
 .content .inner-content {
 	position: absolute;
-	top:  50%;
+    top: 0;
 	left: 50%;
-	transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
 }
 
-.content .inner-content .logo {
-	margin: 30px auto;
-}
-
-.content .inner-content .comming-soon {
-	margin: 0 auto;
+.content .inner-content .web {
+    margin: 0px auto;
 }
 
 .content .inner-content .email {
@@ -272,18 +268,11 @@ a {
 	background-size: 744px 476px;
 }
 
-.logo {
-	width: 196px;
-	height: 256px;
-	background-image: url(../images/CabbitLogo.png);
-	background-size: 196px 256px;
-}
-
-.comming-soon {
-	width: 205px;
-	height: 42px;
-	background-image: url(../images/CommingSoon~Mobile.png);
-	background-size: 205px 42px;
+.web {
+    width: 1080px;
+    height: 4470px;
+    background-image: url(../images/CabbitWeb.png);
+    background-size: 1080px 4470px;
 }
 
 @media
@@ -291,12 +280,6 @@ a {
 (min-resolution: 192dpi) {
 	.rabbit {
 		background-image: url(../images/Rabbit~Mobile@2x.png);
-	}
-	.logo {
-		background-image: url(../images/CabbitLogo@2x.png);
-	}
-	.comming-soon {
-		background-image: url(../images/CommingSoon~Mobile@2x.png);
 	}
 }
 
@@ -308,12 +291,6 @@ a {
 		background-size: 1805px 1148px;
 		top: 460px;
 	}
-	.comming-soon {
-		width: 307px;
-		height: 62px;
-		background-image: url(../images/CommingSoon.png);
-		background-size: 307px 62px;
-	}
 }
 
 @media
@@ -321,9 +298,6 @@ a {
 (min-resolution: 192dpi) and (min-width: 600px) {
 	.rabbit {
 		background-image: url(../images/Rabbit@2x.png);
-	}
-	.comming-soon {
-		background-image: url(../images/CommingSoon@2x.png);
 	}
 }
 
@@ -333,12 +307,6 @@ a {
 	.rabbit {
 		background-image: url(../images/Rabbit~Mobile@3x.png);
 	}
-	.logo {
-		background-image: url(../images/CabbitLogo@3x.png);
-	}
-	.comming-soon {
-		background-image: url(../images/CommingSoon~Mobile@3x.png);
-	}
 }
 
 @media
@@ -346,9 +314,6 @@ a {
 (min-resolution: 288dpi) and (min-width: 600px) {
 	.rabbit {
 		background-image: url(../images/Rabbit@3x.png);
-	}
-	.comming-soon {
-		background-image: url(../images/CommingSoon@3x.png);
 	}
 }
 
@@ -369,7 +334,7 @@ a {
 	}
 	
 	.content .inner-content {
-		top: 40%;
+        top: 0%;
 	}
 	
 	.footer {
