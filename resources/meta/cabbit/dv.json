@@ -1,0 +1,19 @@
+{
+  "client": {
+    "android": {
+      "version": "0.1.0"
+    },
+    "ios": {
+      "version": "0.1.0"
+    }
+  },
+  "name": "cabbit",
+  "server": {
+    "payback": {
+      "cycle": 1
+    },
+    "payment": {
+      "cycle": 2
+    }
+  }
+}
