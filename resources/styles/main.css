@@ -139,7 +139,6 @@ a {
 
 .content .inner-content .web {
     margin: 0px auto;
-    display: block;
 }
 
 .content .inner-content .email {
@@ -296,7 +295,7 @@ a {
     }
 
     .web {
-        background-image: url(../images/CabbitWeb.png);
+        background-image: url(../images/CabbitWeb@2x.png);
     }
 }
 
@@ -318,7 +317,7 @@ a {
     }
 
     .web {
-        background-image: url(../images/CabbitWeb.png);
+        background-image: url(../images/CabbitWeb@3x.png);
     }
 }
 
