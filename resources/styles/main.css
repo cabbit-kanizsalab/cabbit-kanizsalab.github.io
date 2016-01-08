@@ -123,6 +123,13 @@ a {
     transform: translate(-50%, -50%);
 }
 
+.site {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
 .content {
     /*display: table;*/
     width: 100%;
@@ -132,13 +139,10 @@ a {
 
 .content .inner-content {
     position: absolute;
-    top: 0;
+    width: 100%;
+    top: 50px;
     left: 50%;
-    transform: translate(-50%, 0%);
-}
-
-.content .inner-content .web {
-    margin: 0px auto;
+    transform: translate(-50%, -50%);
 }
 
 .content .inner-content .email {
@@ -253,7 +257,7 @@ a {
     background-size: 744px 476px;
 }
 
-.web {
+.site {
     width: 320px;
     height: 1324px;
     background-image: url(../images/CabbitWeb~Mobile.png);
@@ -266,7 +270,7 @@ a {
         background-image: url(../images/Rabbit~Mobile@2x.png);
     }
 
-    .web {
+    .site {
         background-image: url(../images/CabbitWeb~Mobile@2x.png);
     }
 }
@@ -280,11 +284,11 @@ a {
         top: 460px;
     }
 
-    .web {
-        width: 1500px;
-        height: 6208px;
+    .site {
+        width: 1000px;
+        height: 4139px;
         background-image: url(../images/CabbitWeb.png);
-        background-size: 1500px 6208px;
+        background-size: 1000px 4139px;
     }
 }
 
@@ -294,8 +298,8 @@ a {
         background-image: url(../images/Rabbit@2x.png);
     }
 
-    .web {
-        background-image: url(../images/CabbitWeb@2x.png);
+    .site {
+        background-image: url(../images/CabbitWeb.png);
     }
 }
 
@@ -305,7 +309,7 @@ a {
         background-image: url(../images/Rabbit~Mobile@3x.png);
     }
 
-    .web {
+    .site {
         background-image: url(../images/CabbitWeb~Mobile@3x.png);
     }
 }
@@ -316,8 +320,8 @@ a {
         background-image: url(../images/Rabbit@3x.png);
     }
 
-    .web {
-        background-image: url(../images/CabbitWeb@3x.png);
+    .site {
+        background-image: url(../images/CabbitWeb.png);
     }
 }
 
