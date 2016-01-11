@@ -110,7 +110,7 @@ a {
 }
 
 .wrapper {
-    width: 320px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
 }
@@ -124,10 +124,7 @@ a {
 }
 
 .site {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    margin: 0 auto;
 }
 
 .content {
@@ -250,78 +247,69 @@ a {
    ========================================================================== */
 
 .rabbit {
-    width: 744px;
-    height: 476px;
+    width: 1805px;
+    height: 1148px;
 
-    background-image: url(../images/Rabbit~Mobile.png);
-    background-size: 744px 476px;
+    background-image: url(../images/Rabbit.png);
+    background-size: 1805px 1148px;
+
+    display: none;
 }
 
 .site {
     width: 320px;
     height: 1324px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url(../images/CabbitWeb~Mobile.png);
-    background-size: 320px 1324px;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
-    .rabbit {
-        background-image: url(../images/Rabbit~Mobile@2x.png);
-    }
-
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
+(min-resolution: 192dpi) and (min-width: 320px) {
     .site {
         background-image: url(../images/CabbitWeb~Mobile@2x.png);
     }
 }
 
-@media (min-width: 600px) {
-    .rabbit {
-        width: 1805px;
-        height: 1148px;
-        background-image: url(../images/Rabbit.png);
-        background-size: 1805px 1148px;
-        top: 460px;
-    }
-
-    .site {
-        width: 1000px;
-        height: 4139px;
-        background-image: url(../images/CabbitWeb.png);
-        background-size: 1000px 4139px;
-    }
-}
-
-@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 600px),
-(min-resolution: 192dpi) and (min-width: 600px) {
-    .rabbit {
-        background-image: url(../images/Rabbit@2x.png);
-    }
-
-    .site {
-        background-image: url(../images/CabbitWeb.png);
-    }
-}
-
-@media (-webkit-min-device-pixel-ratio: 3),
-(min-resolution: 288dpi) {
-    .rabbit {
-        background-image: url(../images/Rabbit~Mobile@3x.png);
-    }
-
+@media (-webkit-min-device-pixel-ratio: 3) and (min-width: 320px),
+(min-resolution: 288dpi) and (min-width: 320px) {
     .site {
         background-image: url(../images/CabbitWeb~Mobile@3x.png);
     }
 }
 
-@media (-webkit-min-device-pixel-ratio: 3) and (min-width: 600px),
-(min-resolution: 288dpi) and (min-width: 600px) {
-    .rabbit {
-        background-image: url(../images/Rabbit@3x.png);
+@media (min-width: 375px) {
+    .site {
+        width: 375px;
+        height: 1552px;
+    }
+}
+
+@media (min-width: 414px) {
+    .site {
+        width: 414px;
+        height: 1713px;
+    }
+}
+
+@media (min-width: 414px) {
+    .site {
+        width: 414px;
+        height: 1713px;
+    }
+}
+
+@media (min-width: 940px) {
+    .site {
+        width: 940px;
+        height: 3890px;
+        background-image: url(../images/CabbitWeb.png);
+        background-size: 940px 3890px;
     }
 
-    .site {
-        background-image: url(../images/CabbitWeb.png);
+    .rabbit {
+        display: inherit;
     }
 }
 
@@ -332,10 +320,6 @@ a {
    ========================================================================== */
 
 @media only screen and (min-width: 400px) {
-    .wrapper {
-        width: 360px;
-        height: 100%;
-    }
 
     .content {
         height: 100%;
