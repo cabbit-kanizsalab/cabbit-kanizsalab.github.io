@@ -1,17 +1,22 @@
 [
   {
-    "name": "서울대학교",
-    "domain": "snu.ac.kr",
-    "group": "korea/univ/seoul"
-  },
-  {
     "name": "카이스트",
     "domain": "kaist.ac.kr",
     "group": "korea/univ/kaist"
   },
   {
-    "name": "울산과기원",
+    "name": "서울대학교",
+    "domain": "snu.ac.kr",
+    "group": "korea/univ/seoul"
+  },
+  {
+    "name": "울산과기원 (UNIST)",
     "domain": "unist.ac.kr",
     "group": "korea/univ/unist"
+  },
+  {
+    "name": "광주과기원 (GIST)",
+    "domain": "gist.ac.kr",
+    "group": "korea/univ/gist"
   }
 ]
