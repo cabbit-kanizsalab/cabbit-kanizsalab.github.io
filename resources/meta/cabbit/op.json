@@ -4,7 +4,14 @@
       "version": "0.1.0"
     },
     "ios": {
-      "version": "0.1.0"
+      "version": {
+        "required": "0",
+        "latest": "6838"
+      },
+      "cabbit-point": {
+        "sign-up": 3000,
+        "recommanded": 3000,
+      }
     }
   },
   "name": "cabbit",
