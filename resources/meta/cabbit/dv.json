@@ -10,7 +10,7 @@
       },
       "cabbit-point": {
         "sign-up": 3000,
-        "recommanded": 3000,
+        "recommanded": 3000
       }
     }
   },
@@ -22,5 +22,9 @@
     "payment": {
       "cycle": 2
     }
+  },
+  "cabbit-point": {
+    "sign-up": 3000,
+    "recommended": 3000
   }
 }
