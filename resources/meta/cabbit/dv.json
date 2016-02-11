@@ -6,7 +6,7 @@
     "ios": {
       "version": {
         "required": "0",
-        "latest": "7073"
+        "latest": "7114"
       },
       "cabbit-point": {
         "sign-up": 3000,
