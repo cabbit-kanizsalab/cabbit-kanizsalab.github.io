@@ -18,5 +18,10 @@
     "name": "광주과기원 (GIST)",
     "domain": "gist.ac.kr",
     "group": "korea/univ/gist"
+  },
+  {
+    "name": "캐빗 테스터",
+    "domain": "cabbit.io",
+    "group": "global/service/cabbit"
   }
 ]
