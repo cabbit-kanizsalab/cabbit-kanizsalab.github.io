@@ -17,10 +17,10 @@
   "name": "cabbit",
   "server": {
     "payback": {
-      "cycle": 10
+      "cycle": 1
     },
     "payment": {
-      "cycle": 1440
+      "cycle": 2
     }
   },
   "cabbit-point": {
