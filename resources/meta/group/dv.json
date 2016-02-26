@@ -1,10 +1,5 @@
 [
   {
-    "name": "캐빗 테스터",
-    "domain": "cabbit.io",
-    "group": "global/service/cabbit"
-  },
-  {
     "name": "카니자랩 테스터",
     "domain": "kanizsalab.com",
     "group": "korea/company/kanizsalab"
