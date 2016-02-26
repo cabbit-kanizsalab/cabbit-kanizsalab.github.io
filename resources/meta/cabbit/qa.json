@@ -27,8 +27,5 @@
     "sign-up": 1000,
     "recommended": 3000,
     "recommended-by": 3000
-  },
-  "validation": {
-    "checkPaymentIsReady": true
   }
 }
