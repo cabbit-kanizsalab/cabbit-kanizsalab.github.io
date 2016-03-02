@@ -7,10 +7,6 @@
       "version": {
         "required": "0",
         "latest": "7114"
-      },
-      "cabbit-point": {
-        "sign-up": 3000,
-        "recommanded": 3000
       }
     }
   },
@@ -27,8 +23,5 @@
     "sign-up": 1000,
     "recommended": 3000,
     "recommended-by": 3000
-  },
-  "validation": {
-    "checkPaymentIsReady": true
   }
 }
