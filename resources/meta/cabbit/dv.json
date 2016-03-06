@@ -7,7 +7,8 @@
       "version": {
         "required": "0",
         "latest": "7114"
-      }
+      },
+      "AppStoreAppID": "1061135784"
     }
   },
   "name": "cabbit",
