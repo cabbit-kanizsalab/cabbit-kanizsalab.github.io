@@ -2,7 +2,7 @@
   "client": {
     "android": {
       "version": {
-        "required": "0",
+        "required": "4",
         "latest": "4"
       }
     },
