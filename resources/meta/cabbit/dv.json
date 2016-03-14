@@ -1,13 +1,17 @@
 {
   "client": {
     "android": {
-      "version": "0.1.0"
+      "version": {
+        "required": "0",
+        "latest": "3"
+      }
     },
     "ios": {
       "version": {
         "required": "0",
         "latest": "7114"
-      }
+      },
+      "AppStoreAppID": "1061135784"
     }
   },
   "name": "cabbit",
