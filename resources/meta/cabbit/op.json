@@ -21,7 +21,7 @@
   },
   "cabbit-point": {
     "sign-up": 1000,
-    "recommended": 3000,
+    "recommended": 0,
     "recommended-by": 3000
   }
 }
