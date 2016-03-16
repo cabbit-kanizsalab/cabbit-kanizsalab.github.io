@@ -18,10 +18,5 @@
     "name": "광주과기원 (GIST)",
     "domain": "gist.ac.kr",
     "group": "korea/univ/gist"
-  },
-  {
-    "name": "카니자랩",
-    "domain": "kanizsalab.com",
-    "group": "korea/company/kanizsalab"
   }
 ]
