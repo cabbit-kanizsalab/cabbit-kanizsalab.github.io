@@ -27,5 +27,14 @@
     "sign-up": 1000,
     "recommended": 3000,
     "recommended-by": 3000
+  },
+  "cabbitPoint": {
+    "signUp": 1000,
+    "recommended": 3000,
+    "recommendedBy": 3000
+  },
+  "taxiMeterCost": {
+    "max": 100000,
+	"min": 2800
   }
 }
