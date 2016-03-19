@@ -102,6 +102,7 @@ html, body {
 body {
     background: #fff;
     color: #fff;
+    font-size: 18px;
 }
 
 a {
@@ -109,10 +110,164 @@ a {
     text-decoration: underline;
 }
 
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h2.center {
+    text-align: center;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+span.caption {
+    font-size: 14px;
+}
+
+span.bold {
+    font-weight: 800;
+}
+
+span.green {
+    color: #00BFA5;
+}
+
+span.dark-green {
+    color: #22505B;
+}
+
+span.red {
+    color: #FC6E6C;
+}
+
 .wrapper {
     width: 100%;
     margin: 0 auto;
     position: relative;
+}
+
+.content {
+    width: 100%;
+    /*height: 480px;*/
+    position: relative;
+}
+
+.page {
+    /*padding: 5%;*/
+}
+
+.page.green {
+    background-color: #00BFA5;
+}
+
+.page.dark-green {
+    background-color: #36606A;
+}
+
+.page-content {
+    display: table;
+    width: 90vw;
+    min-width: 90vw;
+    max-width: 90vw;
+    height: 90vw;
+    min-height: 90vw;
+    max-height: 90vw;
+    padding: 5vw;
+}
+
+/*.page-content::before {
+    content: "";
+    float: left;
+    display: block;
+    padding-top: 100%;
+}
+
+.page-content::after {
+    content: "";
+    display: table;
+    clear: both;
+}*/
+
+.page-row {
+    display: table-row;
+}
+
+.page-column {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.rounded-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.align-bottom {
+    vertical-align: bottom;
+}
+
+#intro.page {
+    /*padding: 10%;*/
+}
+
+#intro .page-content {
+    /*top: 13.5%;
+    bottom: 13.5%;*/
+}
+
+#intro .logo {
+    margin: 0 auto;
+}
+
+#intro .title {
+    color: #22505B;
+    margin: 0 auto;
+    text-align: center;
+    /*margin: 20px 0;*/
+}
+
+#intro .subtitle {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#intro .appstore {
+    display: block;
+    margin: 0 auto;
+}
+
+#page1 .taxi {
+    margin: 0 auto;
+}
+
+#page2 .mobile-device-black {
+    float: left;
+}
+
+#page2 .mobile-device-white {
+    float: right;
 }
 
 .rabbit {
@@ -127,12 +282,7 @@ a {
     margin: 0 auto;
 }
 
-.content {
-    /*display: table;*/
-    width: 100%;
-    height: 480px;
-    position: relative;
-}
+
 
 .content .inner-content {
     position: absolute;
@@ -246,6 +396,62 @@ a {
    Images
    ========================================================================== */
 
+.logo {
+    width: 75px;
+    height: 97px;
+    background-image: url(../images/Logo.png);
+    background-size: 75px 97px;
+}
+
+.taxi {
+    width: 46px;
+    height: 46px;
+    background-image: url(../images/Taxi.png);
+    background-size: 46px 46px;
+}
+
+.mobile-device-black {
+    width: 94px;
+    height: 164px;
+    background-image: url(../images/MobileDeviceBlack.png);
+    background-size: 94px 164px;
+}
+
+.mobile-device-white {
+    width: 92px;
+    height: 164px;
+    background-image: url(../images/MobileDeviceWhite.png);
+    background-size: 92px 164px;
+}
+
+.cabbit-app-register-direct {
+    width: 210px;
+    height: 238px;
+    background-image: url(../images/CabbitAppRegisterDirect.png);
+    background-size: 210px 238px;
+}
+
+.cabbit-app-match-partner {
+    width: 210px;
+    height: 238px;
+    background-image: url(../images/CabbitAppMatchPartner.png);
+    background-size: 210px 238px;
+}
+
+.cabbit-app-payment {
+    width: 210px;
+    height: 238px;
+    background-image: url(../images/CabbitAppPayment.png);
+    background-size: 210px 238px;
+}
+
+
+
+#intro {
+    background-image: url(../images/IntroBackground.png);
+    background-size: cover;
+}
+
 .rabbit {
     width: 1805px;
     height: 1148px;
@@ -318,6 +524,16 @@ a {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+@media only screen and (max-width: 374px) {
+    body {
+        font-size: 15px;
+    }
+
+    .caption {
+        font-size: 12px;
+    }
+}
 
 @media only screen and (min-width: 400px) {
 
