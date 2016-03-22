@@ -35,6 +35,6 @@
   },
   "taxiMeterCost": {
     "max": 100000,
-	"min": 2800
+    "min": 2800
   }
 }

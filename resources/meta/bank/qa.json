@@ -1,5 +1,10 @@
 [
   {
+    "code": "00",
+    "country": "korea",
+    "name": "테스트 은행 (DV/QA 전용)"
+  },
+  {
     "code": "2",
     "country": "korea",
     "name": "KDB산업"
