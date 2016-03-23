@@ -95,18 +95,94 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-html, body {
+/*html, body {
     height: 100%;
-}
+}*/
 
 body {
     background: #fff;
     color: #fff;
+
+    font-style: normal;
+    font-family: "AppleSDGothicNeo-Regular", "NanumBarunGothicOTF", "NanumBarunGothicTTF", "NanumGothic", sans-serif;
+    font-size: 18px;
 }
 
 a {
     color: #fff;
     text-decoration: underline;
+}
+
+a.button {
+    display: inline-block;
+    padding: 0.5em;
+}
+
+a img {
+    display: inline-block;
+}
+
+h1 {
+    font-size: 2em;
+    white-space: nowrap;
+}
+
+h2 {
+    font-size: 1.4em;
+    white-space: nowrap;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.caption {
+    font-size: 0.8em;
+}
+
+span.bold {
+    font-weight: 800;
+}
+
+span.regular {
+    font-weight: 500;
+}
+
+span.green {
+    color: #00BFA5;
+}
+
+span.dark-green {
+    color: #22505B;
+}
+
+span.red {
+    color: #FC6E6C;
+}
+
+ul {
+    margin: 0;
+}
+
+ul.no-bullet {
+    list-style-type: none;
+}
+
+ul.horizontal li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+ul.horizontal-inline li {
+    display: inline;
+    vertical-align: top;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+ul.vertical-center li {
+    display: block;
+    margin: 0 auto;
 }
 
 .wrapper {
@@ -115,57 +191,182 @@ a {
     position: relative;
 }
 
-.rabbit {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    top: 180px;
-    transform: translate(-50%, -50%);
-}
-
-.site {
-    margin: 0 auto;
-}
-
 .content {
-    /*display: table;*/
     width: 100%;
-    height: 480px;
+    /*height: 480px;*/
     position: relative;
 }
 
-.content .inner-content {
-    position: absolute;
-    width: 100%;
-    top: 50px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.page.green {
+    background-color: #00BFA5;
 }
 
-.content .inner-content .email {
+.page.dark-green {
+    background-color: #36606A;
+}
+
+.page.gray {
+    background-color: #F0F0F0;
+}
+
+.aspect-ratio-square {
+    width: 88vw;
+    min-width: 88vw;
+    max-width: 88vw;
+    height: 88vw;
+    min-height: 88vw;
+    max-height: 88vw;
+}
+
+.page-content {
+    display: table;
+    padding: 6vw;
+}
+
+.page-content.no-padding-bottom {
+    height: 94vw;
+    min-height: 94vw;
+    max-height: 94vw;
+    padding-bottom: 0;
+}
+
+.page-content .page-row {
+    display: table-row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.page-content .page-row.align-bottom {
+    padding-bottom: 0;
+}
+
+.page-content .page-row.align-bottom .page-column {
+    vertical-align: bottom;
+}
+
+.page-content .page-column {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+}
+
+.page-content .page-column.gutter {
+    border:0 transparent solid;
+	border-width: 0.25em;
+	background-clip:padding-box;
+}
+
+.rounded-box {
+    font-size: 0.9em;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
     text-align: center;
-    font-size: 20px;
-    padding: 20px;
-    display: block;
+    line-height: 1.2;
 }
 
-.footer {
-    margin: 30px 20px 0 20px;
-    padding: 10px 0;
-    color: #98EFE3;
-    /*position: absolute;*/
-    /*bottom: 0;*/
-    /*left: 0;*/
-    font-size: 10px;
-    border-top: 1px solid #98EFE3;
+.rounded-box p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
-.footer a {
-    color: #98EFE3;
+.no-margin {
+    margin: 0;
 }
 
-.footer p {
-    margin: 3px 0;
+.no-padding {
+    padding: 0;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.align-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#intro .logo {
+    margin: 0 auto;
+}
+
+#intro .title {
+    color: #22505B;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#intro .subtitle {
+    font-size: 65%;
+    font-weight: 400;
+}
+
+#page1 .taxi {
+    margin: 0 auto;
+}
+
+#page2 .mobile-device-black {
+    float: left;
+    z-index: 1;
+}
+
+#page2 .mobile-device-white {
+    float: right;
+    z-index: 1;
+}
+
+#page2 .info-graphics {
+    vertical-align: middle;
+}
+
+#page2 .horizontal-line {
+    border-top: 3px dotted white;
+    position: absolute;
+    left: 97px;
+    right: 97px;
+    top: 50%;
+}
+
+#page2 .taxi {
+    position: absolute;;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+#about .members li {
+    max-width: 40%;
+    min-width: 40%;
+    line-height: 0.8;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#about .members li li {
+    min-width: 0;
+    max-width: 100%;
+}
+
+#footer ul li:after {
+    content: "|"
+}
+
+#footer ul li:last-child:after {
+    content: "" !important
+}
+
+#footer .page-column {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 /* ==========================================================================
@@ -246,6 +447,254 @@ a {
    Images
    ========================================================================== */
 
+.logo {
+    width: 75px;
+    height: 97px;
+    background-image: url(../images/Logo.png);
+    background-size: 75px 97px;
+}
+
+.taxi {
+    width: 46px;
+    height: 46px;
+    background-image: url(../images/Taxi.png);
+    background-size: 46px 46px;
+}
+
+.mobile-device-black {
+    width: 94px;
+    height: 164px;
+    background-image: url(../images/MobileDeviceBlack.png);
+    background-size: 94px 164px;
+}
+
+.mobile-device-white {
+    width: 92px;
+    height: 164px;
+    background-image: url(../images/MobileDeviceWhite.png);
+    background-size: 92px 164px;
+}
+
+.cabbit-app-register-direct {
+    width: 210px;
+    height: 238px;
+    background-image: url(../images/CabbitAppRegisterDirect.png);
+    background-size: 210px 238px;
+}
+
+.cabbit-app-match-partner {
+    width: 210px;
+    height: 238px;
+    background-image: url(../images/CabbitAppMatchPartner.png);
+    background-size: 210px 238px;
+}
+
+.cabbit-app-payment {
+    width: 210px;
+    height: 238px;
+    background-image: url(../images/CabbitAppPayment.png);
+    background-size: 210px 238px;
+}
+
+.kanizsalab-logo {
+    width: 50px;
+    height: 81px;
+    background-image: url(../images/KanizsalabLogo.png);
+    background-size: 50px 81px;
+}
+
+.profile-jaram {
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/ProfileJaram.png);
+    background-size: 58px 58px;
+}
+
+.profile-shaun {
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/ProfileShaun.png);
+    background-size: 58px 58px;
+}
+
+.profile-jesang {
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/ProfileJesang.png);
+    background-size: 58px 58px;
+}
+
+.profile-seoyoung {
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/ProfileSeoyoung.png);
+    background-size: 58px 58px;
+}
+
+.profile-jongwon {
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/ProfileJongwon.png);
+    background-size: 58px 58px;
+}
+
+.profile-won {
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/ProfileWon.png);
+    background-size: 58px 58px;
+}
+
+.profile-yoon {
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/ProfileYoon.png);
+    background-size: 58px 58px;
+}
+
+#intro {
+    background-image: url(../images/IntroBackground.png);
+    background-size: cover;
+    background-position: center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+    .logo {
+        background-image: url(../images/Logo@2x.png);
+    }
+
+    .taxi {
+        background-image: url(../images/Taxi@2x.png);
+    }
+
+    .mobile-device-black {
+        background-image: url(../images/MobileDeviceBlack@2x.png);
+    }
+
+    .mobile-device-white {
+        background-image: url(../images/MobileDeviceWhite@2x.png);
+    }
+
+    .cabbit-app-register-direct {
+        background-image: url(../images/CabbitAppRegisterDirect@2x.png);
+    }
+
+    .cabbit-app-match-partner {
+        background-image: url(../images/CabbitAppMatchPartner@2x.png);
+    }
+
+    .cabbit-app-payment {
+        background-image: url(../images/CabbitAppPayment@2x.png);
+    }
+
+    .kanizsalab-logo {
+        background-image: url(../images/KanizsalabLogo@2x.png);
+    }
+
+    .profile-jaram {
+        background-image: url(../images/ProfileJaram@2x.png);
+    }
+
+    .profile-shaun {
+        background-image: url(../images/ProfileShaun@2x.png);
+    }
+
+    .profile-jesang {
+        background-image: url(../images/ProfileJesang@2x.png);
+    }
+
+    .profile-seoyoung {
+        background-image: url(../images/ProfileSeoyoung@2x.png);
+    }
+
+    .profile-jongwon {
+        background-image: url(../images/ProfileJongwon@2x.png);
+    }
+
+    .profile-won {
+        background-image: url(../images/ProfileWon@2x.png);
+    }
+
+    .profile-yoon {
+        background-image: url(../images/ProfileYoon@2x.png);
+    }
+
+    #intro {
+        background-image: url(../images/IntroBackground@2x.png);
+    }
+
+}
+
+@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
+
+    .logo {
+        background-image: url(../images/Logo@3x.png);
+    }
+
+    .taxi {
+        background-image: url(../images/Taxi@3x.png);
+    }
+
+    .mobile-device-black {
+        background-image: url(../images/MobileDeviceBlack@3x.png);
+    }
+
+    .mobile-device-white {
+        background-image: url(../images/MobileDeviceWhite@3x.png);
+    }
+
+    .cabbit-app-register-direct {
+        background-image: url(../images/CabbitAppRegisterDirect@3x.png);
+    }
+
+    .cabbit-app-match-partner {
+        background-image: url(../images/CabbitAppMatchPartner@3x.png);
+    }
+
+    .cabbit-app-payment {
+        background-image: url(../images/CabbitAppPayment@3x.png);
+    }
+
+    .kanizsalab-logo {
+        background-image: url(../images/KanizsalabLogo@3x.png);
+    }
+
+    .profile-jaram {
+        background-image: url(../images/ProfileJaram@3x.png);
+    }
+
+    .profile-shaun {
+        background-image: url(../images/ProfileShaun@3x.png);
+    }
+
+    .profile-jesang {
+        background-image: url(../images/ProfileJesang@3x.png);
+    }
+
+    .profile-seoyoung {
+        background-image: url(../images/ProfileSeoyoung@3x.png);
+    }
+
+    .profile-jongwon {
+        background-image: url(../images/ProfileJongwon@3x.png);
+    }
+
+    .profile-won {
+        background-image: url(../images/ProfileWon@3x.png);
+    }
+
+    .profile-yoon {
+        background-image: url(../images/ProfileYoon@3x.png);
+    }
+
+    #intro {
+        background-image: url(../images/IntroBackground@3x.png);
+    }
+
+}
+
+/*
 .rabbit {
     width: 1805px;
     height: 1148px;
@@ -312,6 +761,7 @@ a {
         display: inherit;
     }
 }
+*/
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -319,7 +769,334 @@ a {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 400px) {
+@media only screen and (max-width: 374px) {
+    body {
+        font-size: 15px;
+    }
+
+    .cabbit-app-register-direct {
+        width: 185px;
+        height: 210px;
+        background-size: 185px 210px;
+    }
+
+    .cabbit-app-match-partner {
+        width: 185px;
+        height: 210px;
+        background-size: 185px 210px;
+    }
+
+    .cabbit-app-payment {
+        width: 185px;
+        height: 210px;
+        background-size: 185px 210px;
+    }
+
+}
+
+@media only screen and (min-width: 414px) {
+    body {
+        font-size: 20px;
+    }
+
+    .caption {
+        font-size: 0.7em;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    ul.horizontal-inline li {
+        display: inline-block;
+    }
+
+    .aspect-ratio-square {
+        width: auto;
+        min-width: 0;
+        max-width: none;
+        height: auto;
+        min-height: 0;
+        max-height: none;
+    }
+
+    .page-content {
+        display: block;
+        padding: 50px;
+    }
+
+    .page-content.no-padding-bottom {
+        height: auto;
+        min-height: 0;
+        max-height: 95%;
+        padding-bottom: 0;
+    }
+
+    .page-content .page-row {
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+
+    .page-content .page-row:first-child {
+        margin-top: 0;
+    }
+
+    .page-content .page-row:last-child {
+        margin-bottom: 0;
+    }
+
+    .page-content .page-column {
+        display: block;
+    }
+
+    #page2 .info-graphics {
+        display: inline-block;
+        width: 400px;
+    }
+
+    #page2 .horizontal-line {
+        border-top: 5px dotted white;
+        left: 121px;
+        right: 121px;
+    }
+
+    #about .members li {
+        min-width: 140px;
+        max-width: 140px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #about .members li li {
+        min-width: 0;
+        max-width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #footer .page-content {
+        padding: 30px 40px;
+    }
+
+    #footer .page-content .page-row {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #footer .caption {
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 129px;
+        background-image: url(../images/Logo~Desktop.png);
+        background-size: 100px 129px;
+    }
+
+    .taxi {
+        width: 70px;
+        height: 70px;
+        background-image: url(../images/Taxi~Desktop.png);
+        background-size: 70px 70px;
+    }
+
+    .mobile-device-black {
+        width: 120px;
+        height: 209px;
+        background-image: url(../images/MobileDeviceBlack~Desktop.png);
+        background-size: 120px 209px;
+    }
+
+    .mobile-device-white {
+        width: 120px;
+        height: 209px;
+        background-image: url(../images/MobileDeviceWhite~Desktop.png);
+        background-size: 120px 209px;
+    }
+
+    .cabbit-app-register-direct {
+        width: 270px;
+        height: 306px;
+        background-image: url(../images/CabbitAppRegisterDirect~Desktop.png);
+        background-size: 270px 306px;
+    }
+
+    .cabbit-app-match-partner {
+        width: 270px;
+        height: 306px;
+        background-image: url(../images/CabbitAppMatchPartner~Desktop.png);
+        background-size: 270px 306px;
+    }
+
+    .cabbit-app-payment {
+        width: 270px;
+        height: 306px;
+        background-image: url(../images/CabbitAppPayment~Desktop.png);
+        background-size: 270px 306px;
+    }
+
+    .kanizsalab-logo {
+        width: 70px;
+        height: 113px;
+        background-image: url(../images/KanizsalabLogo~Desktop.png);
+        background-size: 70px 113px;
+    }
+
+    .profile-jaram {
+        width: 100px;
+        height: 100px;
+        background-image: url(../images/ProfileJaram~Desktop.png);
+        background-size: 100px 100px;
+    }
+
+    .profile-shaun {
+        width: 100px;
+        height: 100px;
+        background-image: url(../images/ProfileShaun~Desktop.png);
+        background-size: 100px 100px;
+    }
+
+    .profile-jesang {
+        width: 100px;
+        height: 100px;
+        background-image: url(../images/ProfileJesang~Desktop.png);
+        background-size: 100px 100px;
+    }
+
+    .profile-seoyoung {
+        width: 100px;
+        height: 100px;
+        background-image: url(../images/ProfileSeoyoung~Desktop.png);
+        background-size: 100px 100px;
+    }
+
+    .profile-jongwon {
+        width: 100px;
+        height: 100px;
+        background-image: url(../images/ProfileJongwon~Desktop.png);
+        background-size: 100px 100px;
+    }
+
+    .profile-won {
+        width: 100px;
+        height: 100px;
+        background-image: url(../images/ProfileWon~Desktop.png);
+        background-size: 100px 100px;
+    }
+
+    .profile-yoon {
+        width: 100px;
+        height: 100px;
+        background-image: url(../images/ProfileYoon~Desktop.png);
+        background-size: 100px 100px;
+    }
+
+    #intro {
+        background-image: url(../images/IntroBackground~Desktop.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+        .logo {
+            background-image: url(../images/Logo~Desktop@2x.png);
+        }
+
+        .taxi {
+            background-image: url(../images/Taxi~Desktop@2x.png);
+        }
+
+        .mobile-device-black {
+            background-image: url(../images/MobileDeviceBlack~Desktop@2x.png);
+        }
+
+        .mobile-device-white {
+            background-image: url(../images/MobileDeviceWhite~Desktop@2x.png);
+        }
+
+        .cabbit-app-register-direct {
+            background-image: url(../images/CabbitAppRegisterDirect~Desktop@2x.png);
+        }
+
+        .cabbit-app-match-partner {
+            background-image: url(../images/CabbitAppMatchPartner~Desktop@2x.png);
+        }
+
+        .cabbit-app-payment {
+            background-image: url(../images/CabbitAppPayment~Desktop@2x.png);
+        }
+
+        .kanizsalab-logo {
+            background-image: url(../images/KanizsalabLogo~Desktop@2x.png);
+        }
+
+        .profile-jaram {
+            background-image: url(../images/ProfileJaram~Desktop@2x.png);
+        }
+
+        .profile-shaun {
+            background-image: url(../images/ProfileShaun~Desktop@2x.png);
+        }
+
+        .profile-jesang {
+            background-image: url(../images/ProfileJesang~Desktop@2x.png);
+        }
+
+        .profile-seoyoung {
+            background-image: url(../images/ProfileSeoyoung~Desktop@2x.png);
+        }
+
+        .profile-jongwon {
+            background-image: url(../images/ProfileJongwon~Desktop@2x.png);
+        }
+
+        .profile-won {
+            background-image: url(../images/ProfileWon~Desktop@2x.png);
+        }
+
+        .profile-yoon {
+            background-image: url(../images/ProfileYoon~Desktop@2x.png);
+        }
+
+        #intro {
+            background-image: url(../images/IntroBackground~Desktop@2x.png);
+        }
+
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 24px;
+    }
+
+    .caption {
+        font-size: 0.7em;
+    }
+
+    .content {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    #page2 .info-graphics {
+        width: 500px;
+    }
+}
+
+@media only screen and (min-width: 920px) {
+
+    .content {
+        max-width: 920px;
+    }
+
+}
+
+
+/*@media only screen and (min-width: 400px) {
 
     .content {
         height: 100%;
@@ -362,7 +1139,7 @@ a {
     .wrapper {
         width: 940px;
     }
-}
+}*/
 
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
