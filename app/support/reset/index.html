@@ -45,6 +45,13 @@
         // Parameters
         $scope.host = getURLParameter('host');
         $scope.accessToken = getURLParameter('access_token');
+        $scope.finish = function () {
+            if ($scope.isReturnToApp) {
+                window.location = 'cabbit://';
+            } else {
+                window.close();
+            }
+        };
         if (!$scope.host || !$scope.accessToken) {
             $scope.resultType = 'alert-danger';
             $scope.resultTitle = '에러';
@@ -64,15 +71,18 @@
                     password: $scope.newPassword
                 }
             }).then(function success(response) {
+                $scope.isReturnToApp = true;
                 $scope.resultType = 'alert-success';
                 $scope.resultTitle = '변경완료';
                 $scope.resultMessage = '비밀번호 변경을 완료했습니다: 이메일 ' + response.data.email + ' 로 앱에서 다시 로그인해 주세요.';
             }, function error(response) {
                 if (401 === response.status) {
+                    $scope.isReturnToApp = true;
                     $scope.resultType = 'alert-warning';
                     $scope.resultTitle = '죄송합니다';
                     $scope.resultMessage = '비번변경 유효기간이 지난것 같습니다. 다시 이메일을 요청해 주세요!';
                 } else {
+                    $scope.isReturnToApp = false;
                     $scope.resultType = 'alert-danger';
                     $scope.resultTitle = '죄송합니다';
                     $scope.resultMessage = '서버 문제로 인해 인증에 실패하였습니다. 캐빗팀에 연락해 주세요 ㅜㅜ';
@@ -80,9 +90,6 @@
                 }
             });
         };
-        $scope.finish = function () {
-            window.close();
-        }
     });
 </script>
 
