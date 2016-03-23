@@ -44,6 +44,11 @@
         $scope.host = getURLParameter('host');
         $scope.accessToken = getURLParameter('access_token');
         $scope.authToken = getURLParameter('auth_token');
+        $scope.finish = function () {
+            console.log('X')
+            window.location = 'cabbit://';
+            //window.close();
+        }
         if (!$scope.host || !$scope.accessToken || !$scope.authToken) {
             $scope.resultType = 'alert-danger';
             $scope.resultTitle = '에러';
@@ -81,9 +86,6 @@
                 }
             });
         };
-        $scope.finish = function () {
-            window.close();
-        }
         $scope.verify();
     });
 </script>
