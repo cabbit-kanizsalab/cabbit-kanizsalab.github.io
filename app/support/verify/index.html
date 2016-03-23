@@ -45,10 +45,9 @@
         $scope.accessToken = getURLParameter('access_token');
         $scope.authToken = getURLParameter('auth_token');
         $scope.finish = function () {
-            //if ($scope.isSuccess) {
-                window.location = 'cabbit://';
-           // }
-            window.close();
+            console.log('X')
+            window.location = 'cabbit://';
+            //window.close();
         }
         if (!$scope.host || !$scope.accessToken || !$scope.authToken) {
             $scope.resultType = 'alert-danger';
@@ -71,12 +70,10 @@
                     authToken: $scope.authToken
                 }
             }).then(function success() {
-                $scope.isSuccess = true;
                 $scope.resultType = 'alert-success';
                 $scope.resultTitle = '인증 완료';
                 $scope.resultMessage = '감사합니다. 이제 앱을 사용하실수 있습니다!';
             }, function error(response) {
-                $scope.isSuccess = false;
                 if (401 === response.status) {
                     $scope.resultType = 'alert-warning';
                     $scope.resultTitle = '죄송합니다';
