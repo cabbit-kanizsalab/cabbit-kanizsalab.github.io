@@ -1,10 +1,16 @@
 {
   "client": {
     "android": {
-      "version": {
-        "required": "0",
-        "latest": "3"
-      }
+      "version": [
+        207,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215
+      ]
     },
     "ios": {
       "version": {
