@@ -2,7 +2,7 @@
   "client": {
     "android": {
       "version": [
-        100
+        101
       ]
     },
     "ios": {
