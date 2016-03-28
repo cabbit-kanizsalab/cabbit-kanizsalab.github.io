@@ -115,7 +115,7 @@ a {
 
 a.button {
     display: inline-block;
-    padding: 0.5em;
+    padding: 0.25em;
 }
 
 a img {
@@ -306,6 +306,16 @@ ul.vertical-center li {
 #intro .subtitle {
     font-size: 65%;
     font-weight: 400;
+}
+
+#intro .appstore {
+    width: 120px;
+    height: auto;
+}
+
+#intro .playstore {
+    width: 120px;
+    height: auto;
 }
 
 #page1 .taxi {
@@ -792,6 +802,16 @@ ul.vertical-center li {
         background-size: 185px 210px;
     }
 
+}
+
+@media only screen and (min-width: 375px) {
+    #intro .appstore {
+        width: 135px;
+    }
+
+    #intro .playstore {
+        width: 140px;
+    }
 }
 
 @media only screen and (min-width: 414px) {
