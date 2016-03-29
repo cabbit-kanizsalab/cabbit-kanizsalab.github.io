@@ -5,6 +5,11 @@
     "group": "korea/univ/kaist"
   },
   {
+    "name": "디지스트",
+    "domain": "dgist.ac.kr",
+    "group": "korea/univ/dgist"
+  },
+  {
     "name": "서울대학교",
     "domain": "snu.ac.kr",
     "group": "korea/univ/seoul"
@@ -23,5 +28,15 @@
     "name": "충남대학교",
     "domain": "cnu.ac.kr",
     "group": "korea/univ/chungnam"
+  },
+  {
+    "name": "포항공대",
+    "domain": "postech.ac.kr",
+    "group": "korea/univ/postech"
+  },
+  {
+    "name": "한동대학교",
+    "domain": "handong.edu",
+    "group": "korea/univ/handong"
   }
 ]
