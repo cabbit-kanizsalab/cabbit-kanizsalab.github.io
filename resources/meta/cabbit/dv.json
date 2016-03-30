@@ -2,8 +2,7 @@
   "client": {
     "android": {
       "version": [
-        214,
-        215
+        216
       ]
     },
     "ios": {
