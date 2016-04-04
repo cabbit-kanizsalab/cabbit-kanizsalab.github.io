@@ -10,6 +10,10 @@
       ]
     },
     "ios": {
+      "versions": [
+        7885,
+        8531
+      ],
       "version": {
         "required": "0",
         "latest": "7114"
