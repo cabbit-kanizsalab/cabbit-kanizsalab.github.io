@@ -7,3 +7,8 @@
 out
 gen
 # Created by .ignore support plugin (hsz.mobi)
+
+# jekyll
+_site/
+.sass-cache/
+.jekyll-metadata
