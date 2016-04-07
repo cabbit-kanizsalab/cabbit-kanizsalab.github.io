@@ -3,9 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="google-site-verification" content="8ngKcZov2d558kQ9oIYya-F-zZan-DWMPV51fMjxoI8"/>
+    <meta name="google-site-verification" content="8ngKcZov2d558kQ9oIYya-F-zZan-DWMPV51fMjxoI8" />
     <meta name="naver-site-verification" content="93e5ad7079026faafd33a7f7ed310f172a496bfe"/>
-    <meta http-equiv="refresh" content="0;url=cabbit://"/>
+
+    <!-- TODO: Support various deeplinking in future -->
+    <meta http-equiv="refresh" content="0;url=cabbit://" />
 
     <title>함께타는 택시풀링 캐빗</title>
 
@@ -25,36 +27,10 @@
     <script src="resources/scripts/vendor/modernizr-2.8.3.min.js"></script>
 
     <script type="text/javascript">
-        !function () {
-            var analytics = window.analytics = window.analytics || [];
-            if (!analytics.initialize)if (analytics.invoked)window.console && console.error && console.error("Segment snippet included twice."); else {
-                analytics.invoked = !0;
-                analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "page", "once", "off", "on"];
-                analytics.factory = function (t) {
-                    return function () {
-                        var e = Array.prototype.slice.call(arguments);
-                        e.unshift(t);
-                        analytics.push(e);
-                        return analytics
-                    }
-                };
-                for (var t = 0; t < analytics.methods.length; t++) {
-                    var e = analytics.methods[t];
-                    analytics[e] = analytics.factory(e)
-                }
-                analytics.load = function (t) {
-                    var e = document.createElement("script");
-                    e.type = "text/javascript";
-                    e.async = !0;
-                    e.src = ("https:" === document.location.protocol ? "https://" : "http://") + "cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js";
-                    var n = document.getElementsByTagName("script")[0];
-                    n.parentNode.insertBefore(e, n)
-                };
-                analytics.SNIPPET_VERSION = "3.1.0";
-                analytics.load("aLAJl4qT3ijSSFOPC1dZbawwi0LQ2Tcg");
-                analytics.page()
-            }
-        }();
+        !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
+        analytics.load("aLAJl4qT3ijSSFOPC1dZbawwi0LQ2Tcg");
+        analytics.page()
+        }}();
     </script>
 </head>
 <body>
@@ -84,16 +60,11 @@
                 </div>
                 <div class="page-row">
                     <div class="page-column text-align-center">
-                        <a href="https://geo.itunes.apple.com/kr/app/kaebis/id1061135784?mt=8" id="app-store"
-                           class="button" target="_blank">
-                            <img src="resources/images/Download_on_the_App_Store_Badge_KR_135x40.svg" class="appstore"
-                                 width="135" height="40"/>
+                        <a href="https://geo.itunes.apple.com/kr/app/kaebis/id1061135784?mt=8" id="app-store" class="button" target="_blank">
+                            <img src="resources/images/Download_on_the_App_Store_Badge_KR_135x40.svg" class="appstore" width="135" height="40"/>
                         </a>
-                        <a href="https://play.google.com/store/apps/details?id=io.cabbit&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-AC-global-none-all-co-pr-py-PartBadges-Oct1515-1"
-                           class="button" target="_blank">
-                            <img alt="Get it on Google Play"
-                                 src="https://play.google.com/intl/en_us/badges/images/apps/ko-play-badge.png"
-                                 width="140" height="46" class="playstore"/>
+                        <a href="https://play.google.com/store/apps/details?id=io.cabbit&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-AC-global-none-all-co-pr-py-PartBadges-Oct1515-1" class="button" target="_blank">
+                            <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/apps/ko-play-badge.png" width="140" height="46" class="playstore"/>
                         </a>
                     </div>
                 </div>
@@ -128,8 +99,7 @@
                                 <span class="dark-green bold">연간 1,143억원 절감!<br></span>
                             </p>
                             <p>
-                                <span class="green bold">택시를 </span><span class="red bold">함께</span><span
-                                    class="green bold"> 타면 어떨까요?</span>
+                                <span class="green bold">택시를 </span><span class="red bold">함께</span><span class="green bold"> 타면 어떨까요?</span>
                             </p>
                         </div>
                     </div>
@@ -168,8 +138,7 @@
             <div class="page-content aspect-ratio-square no-padding-bottom">
                 <div class="page-row">
                     <div class="page-column">
-                        <h2 class="text-align-center no-margin"><span class="red regular">Step1.</span><span
-                                class="dark-green"> 출발지/목적지 입력</span></h2>
+                        <h2 class="text-align-center no-margin"><span class="red regular">Step1.</span><span class="dark-green"> 출발지/목적지 입력</span></h2>
                     </div>
                 </div>
                 <div class="page-row">
@@ -190,8 +159,7 @@
             <div class="page-content aspect-ratio-square no-padding-bottom">
                 <div class="page-row">
                     <div class="page-column">
-                        <h2 class="text-align-center no-margin"><span class="red regular">Step2.</span><span
-                                class="green"> 동행자 선택</span></h2>
+                        <h2 class="text-align-center no-margin"><span class="red regular">Step2.</span><span class="green"> 동행자 선택</span></h2>
                     </div>
                 </div>
                 <div class="page-row">
@@ -212,8 +180,7 @@
             <div class="page-content aspect-ratio-square no-padding-bottom">
                 <div class="page-row">
                     <div class="page-column">
-                        <h2 class="text-align-center no-margin"><span class="red regular">Step3.</span><span
-                                class="dark-green"> 40% 할인된 택시비 지불</span></h2>
+                        <h2 class="text-align-center no-margin"><span class="red regular">Step3.</span><span class="dark-green"> 40% 할인된 택시비 지불</span></h2>
                     </div>
                 </div>
                 <div class="page-row">
@@ -268,8 +235,7 @@
                                             <li><span class="dark-green caption">COO</span></li>
                                             <li><span class="dark-green caption">Data Scientist</span></li>
                                             <li><span class="dark-green caption">Ph.D. student at KAIST GSCT</span></li>
-                                            <li><span class="dark-green caption">Worked at Samsung Electronics</span>
-                                            </li>
+                                            <li><span class="dark-green caption">Worked at Samsung Electronics</span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -282,8 +248,7 @@
                                             <li><span class="dark-green bold caption">윤제상</span></li>
                                             <li><span class="dark-green caption">CTO</span></li>
                                             <li><span class="dark-green caption">Data Engineer</span></li>
-                                            <li><span class="dark-green caption">B.S. in CS at SungKyunKwan Univ.</span>
-                                            </li>
+                                            <li><span class="dark-green caption">B.S. in CS at SungKyunKwan Univ.</span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -296,8 +261,7 @@
                                             <li><span class="dark-green bold caption">손서영</span></li>
                                             <li><span class="dark-green caption">CDO</span></li>
                                             <li><span class="dark-green caption">KAIST GSCT</span></li>
-                                            <li><span class="dark-green caption">Worked at Daehong communications</span>
-                                            </li>
+                                            <li><span class="dark-green caption">Worked at Daehong communications</span></li>
                                         </ul>
                                     </div>
                                 </div>
