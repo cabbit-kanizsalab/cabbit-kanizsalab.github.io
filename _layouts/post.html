@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<article class="post card" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="card-content">
+    <header class="card-row post-header">
+      <div class="card-column">
+        <h2 class="post-title no-margin" itemprop="name headline">{{ page.title }}</h2>
+        <p class="post-meta">
+          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">작성일: {{ page.date | date: "%Y-%m-%d" }}</time>
+          {% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
+        </p>
+      </div>
+    </header>
+
+    <div class="card-row post-content" itemprop="articleBody">
+      <div class="card-column">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</article>
