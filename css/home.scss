@@ -61,28 +61,6 @@ ul {
 
 #card2 {
 
-  .mobile-device-black {
-    float: left;
-    z-index: 1;
-  }
-
-  .mobile-device-white {
-    float: right;
-    z-index: 1;
-  }
-
-  .info-graphics {
-    vertical-align: middle;
-  }
-
-  .horizontal-line {
-    border-top: 3px dotted white;
-    position: absolute;
-    left: 97px;
-    right: 97px;
-    top: 50%;
-  }
-
   .taxi {
     position: absolute;;
     top: 0;
@@ -90,6 +68,14 @@ ul {
     bottom: 0;
     left: 0;
     margin: auto;
+  }
+
+}
+
+#security {
+
+  .lock {
+    margin: 0 20px 0 0px;
   }
 
 }
@@ -173,15 +159,9 @@ Modify as content requires.
     display: inline-block;
   }
 
-  #card2 {
-    .info-graphics {
-      display: inline-block;
-      width: 400px;
-    }
-    .horizontal-line {
-      border-top: 5px dotted white;
-      left: 121px;
-      right: 121px;
+  #security {
+    .safe {
+      width: 560px;
     }
   }
 
@@ -213,12 +193,6 @@ Modify as content requires.
     font-size: 0.7em;
   }
 
-  #card2 {
-    .info-graphics {
-      width: 500px;
-    }
-  }
-
 }
 
 
@@ -240,18 +214,11 @@ Images
   background-size: 46px 46px;
 }
 
-.mobile-device-black {
-  width: 94px;
-  height: 164px;
-  background-image: url("../images/MobileDeviceBlack.png");
-  background-size: 94px 164px;
-}
-
-.mobile-device-white {
-  width: 92px;
-  height: 164px;
-  background-image: url("../images/MobileDeviceWhite.png");
-  background-size: 92px 164px;
+.ride-width {
+  width: 187px;
+  height: 185px;
+  background-image: url("../images/RideWith.png");
+  background-size: 187px 185px;
 }
 
 .cabbit-app-register-direct {
@@ -273,6 +240,13 @@ Images
   height: 238px;
   background-image: url("../images/CabbitAppPayment.png");
   background-size: 210px 238px;
+}
+
+.lock {
+  width: 34px;
+  height: 48px;
+  background-image: url("../images/Lock.png");
+  background-size: 34px 48px;
 }
 
 .kanizsalab-logo {
@@ -347,12 +321,8 @@ Images
     background-image: url("../images/Taxi@2x.png");
   }
 
-  .mobile-device-black {
-    background-image: url("../images/MobileDeviceBlack@2x.png");
-  }
-
-  .mobile-device-white {
-    background-image: url("../images/MobileDeviceWhite@2x.png");
+  .ride-width {
+    background-image: url("../images/RideWith@2x.png");
   }
 
   .cabbit-app-register-direct {
@@ -369,6 +339,10 @@ Images
 
   .kanizsalab-logo {
     background-image: url("../images/KanizsalabLogo@2x.png");
+  }
+
+  .lock {
+    background-image: url("../images/Lock@2x.png");
   }
 
   .profile-jaram {
@@ -411,12 +385,8 @@ Images
     background-image: url("../images/Taxi@3x.png");
   }
 
-  .mobile-device-black {
-    background-image: url("../images/MobileDeviceBlack@3x.png");
-  }
-
-  .mobile-device-white {
-    background-image: url("../images/MobileDeviceWhite@3x.png");
+  .ride-width {
+    background-image: url("../images/RideWith@3x.png");
   }
 
   .cabbit-app-register-direct {
@@ -429,6 +399,10 @@ Images
 
   .cabbit-app-payment {
     background-image: url("../images/CabbitAppPayment@3x.png");
+  }
+
+  .lock {
+    background-image: url("../images/Lock@3x.png");
   }
 
   .kanizsalab-logo {
@@ -480,18 +454,11 @@ Images
     background-size: 70px 70px;
   }
 
-  .mobile-device-black {
-    width: 120px;
-    height: 209px;
-    background-image: url("../images/MobileDeviceBlack~Desktop.png");
-    background-size: 120px 209px;
-  }
-
-  .mobile-device-white {
-    width: 120px;
-    height: 209px;
-    background-image: url("../images/MobileDeviceWhite~Desktop.png");
-    background-size: 120px 209px;
+  .ride-width {
+    width: 250px;
+    height: 247px;
+    background-image: url("../images/RideWith~Desktop.png");
+    background-size: 250px 247px;
   }
 
   .cabbit-app-register-direct {
@@ -513,6 +480,13 @@ Images
     height: 306px;
     background-image: url("../images/CabbitAppPayment~Desktop.png");
     background-size: 270px 306px;
+  }
+
+  .lock {
+    width: 40px;
+    height: 56px;
+    background-image: url("../images/Lock~Desktop.png");
+    background-size: 40px 56px;
   }
 
   .kanizsalab-logo {
@@ -582,12 +556,8 @@ Images
     background-image: url("../images/Taxi~Desktop@2x.png");
   }
 
-  .mobile-device-black {
-    background-image: url("../images/MobileDeviceBlack~Desktop@2x.png");
-  }
-
-  .mobile-device-white {
-    background-image: url("../images/MobileDeviceWhite~Desktop@2x.png");
+  .ride-width {
+    background-image: url("../images/RideWith~Desktop@2x.png");
   }
 
   .cabbit-app-register-direct {
@@ -600,6 +570,10 @@ Images
 
   .cabbit-app-payment {
     background-image: url("../images/CabbitAppPayment~Desktop@2x.png");
+  }
+
+  .lock {
+    background-image: url("../images/Lock~Desktop@2x.png");
   }
 
   .kanizsalab-logo {
