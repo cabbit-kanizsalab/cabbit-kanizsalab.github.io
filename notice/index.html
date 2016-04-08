@@ -29,11 +29,9 @@ show_in_navigation: true
             <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">작성일: {{ post.date | date: "%Y-%m-%d" }}</time>
             {% if post.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span></span>{% endif %}
           </p>
-        </div>
-      </div>
-      <div class="card-row">
-        <div class="card-column entry">
-          {{ post.content | strip_html | truncatewords: 15 }}
+          <p class="entry">
+            {{ post.content | strip_html | truncatewords: 15 }}
+          </p>
         </div>
       </div>
     </div>
