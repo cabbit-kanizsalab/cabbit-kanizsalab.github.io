@@ -326,7 +326,7 @@ padding: $spacing-unit 0;
       }
 
       @media screen and (min-width: 600px) {
-        display: block;
+        display: table;
         margin-top: 30px;
         margin-bottom: 30px;
         padding: 0;
@@ -339,9 +339,6 @@ padding: $spacing-unit 0;
           margin-bottom: 0;
         }
 
-        .card-column {
-          display: block;
-        }
       }
     }
 
