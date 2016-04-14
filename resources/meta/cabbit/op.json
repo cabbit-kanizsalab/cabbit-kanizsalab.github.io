@@ -1,11 +1,24 @@
 {
   "client": {
+    "alert": {
+      "startAt": "2016-04-09T22:00:00+09:00",
+      "stopAt": "2016-04-11T00:00:00+09:00",
+      "title": "제목",
+      "message": "테스트!!!"
+    },
     "android": {
       "version": [
+        90
+      ],
+      "versions": [
         90
       ]
     },
     "ios": {
+      "versions": [
+        7114,
+        8830
+      ],
       "version": {
         "required": "0",
         "latest": "7114"
@@ -25,7 +38,8 @@
   "cabbit-point": {
     "sign-up": 1000,
     "recommended": 3000,
-    "recommended-by": 3000
+    "recommended-by": 3000,
+    "_deprecated": 8531
   },
   "cabbitPoint": {
     "signUp": 1000,
