@@ -1,13 +1,15 @@
-<html>
+<html ng-app="passwordResetApp">
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Cabbit - 비밀번호 바꾸기</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="../styles/main.css" rel="stylesheet">
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
     <script src="../scripts/util.js"></script>
+    <script src="./script.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -16,82 +18,41 @@
     <![endif]-->
 
 </head>
-<body>
-<div ng-app="passwordResetApp" ng-controller="formCtrl" class="container">
-    <form class="form-signin text-center">
+<body class="container" ng-controller="PasswordResetFormController as passwordResetCtrl">
+<form name="passwordResetForm" class="form-signin" novalidate
+      ng-submit="passwordResetCtrl.submit(passwordResetForm.$valid)">
+    <div class="text-center">
         <img src="../../../resources/images/CabbitRoundLogo.png" width="130" height="130"/>
 
         <h2 class="form-signin-heading">비밀번호 변경</h2>
 
-        <p>아래 창에 새로운 비밀번호를 입력한 후 등록을 눌러주시면 비번이 변경됩니다. 비번을 다시 변경하시려면 앱에서 비번 변경을 다시 요청해 주세요</p>
-
-        <input ng-model="newPassword" ng-hide="resultType"
-               class="form-control" type="password" placeholder="새 비밀번호" required>
-        <button ng-click="confirm()" ng-hide="resultType"
-                class="btn btn-lg btn-primary btn-block">등록
-        </button>
-        <div class="alert" ng-class="resultType" role="alert" ng-show="resultType">
-            <strong>{{ resultTitle }}</strong><br>{{ resultMessage }}
+        <p>아래 창에 새로운 비밀번호를 입력한 후 등록을 클릭하여<br>비밀번호를 변경해 주세요.</p>
+        <br>
+    </div>
+    <div class="form-group">
+        <input name="password" ng-model="passwordResetCtrl.user.password"
+               class="form-control" type="password" placeholder="새로운 비밀번호" required
+               is-password/>
+        <div ng-messages="passwordResetForm.password.$error">
+            <div ng-messages-include="./messages.html"></div>
         </div>
-        <button ng-click="finish()"
-                ng-hide="!resultType"
-                class="btn btn-lg btn-default btn-block">확인
+    </div>
+    <div class="form-group">
+        <input name="confirmPassword" ng-model="passwordResetCtrl.user.confirmPassword"
+               class="form-control" type="password" placeholder="새로운 비밀번호 확인" required
+               compare-to="passwordResetCtrl.user.password" is-password/>
+        <div ng-messages="passwordResetForm.confirmPassword.$error">
+            <div ng-messages-include="./messages.html"></div>
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" ng-disabled="!passwordResetCtrl.submitting.enabled"
+                class="btn btn-primary btn-lg btn-block">{{ passwordResetCtrl.submitting.title }}
         </button>
-    </form>
-</div>
-<script>
-    var app = angular.module('passwordResetApp', []);
-    app.controller('formCtrl', function ($scope, $http) {
-        // Parameters
-        $scope.host = getURLParameter('host');
-        $scope.accessToken = getURLParameter('access_token');
-        $scope.finish = function () {
-            if ($scope.isReturnToApp) {
-                window.location = 'cabbit://';
-            } else {
-                window.close();
-            }
-        };
-        if (!$scope.host || !$scope.accessToken) {
-            $scope.resultType = 'alert-danger';
-            $scope.resultTitle = '에러';
-            $scope.resultMessage = '파라메터가 잘못되어 기능이 동작하지 않습니다';
-            return;
-        }
-        // Functions
-        $scope.confirm = function () {
-            $http({
-                method: 'PUT',
-                url: $scope.host + '/User',
-                headers: {
-                    'Authorization': 'Bearer ' + $scope.accessToken,
-                    'Content-Type': "application/json; charset=utf8"
-                },
-                data: {
-                    password: $scope.newPassword
-                }
-            }).then(function success(response) {
-                $scope.isReturnToApp = true;
-                $scope.resultType = 'alert-success';
-                $scope.resultTitle = '변경완료';
-                $scope.resultMessage = '비밀번호 변경을 완료했습니다: 이메일 ' + response.data.email + ' 로 앱에서 다시 로그인해 주세요.';
-            }, function error(response) {
-                if (401 === response.status) {
-                    $scope.isReturnToApp = true;
-                    $scope.resultType = 'alert-warning';
-                    $scope.resultTitle = '죄송합니다';
-                    $scope.resultMessage = '비번변경 유효기간이 지난것 같습니다. 다시 이메일을 요청해 주세요!';
-                } else {
-                    $scope.isReturnToApp = false;
-                    $scope.resultType = 'alert-danger';
-                    $scope.resultTitle = '죄송합니다';
-                    $scope.resultMessage = '서버 문제로 인해 인증에 실패하였습니다. 캐빗팀에 연락해 주세요 ㅜㅜ';
-                    console.log('Failed', response);
-                }
-            });
-        };
-    });
-</script>
-
+    </div>
+    <div class="alert" ng-class="passwordResetCtrl.alert.type" role="alert" ng-show="passwordResetCtrl.alert.visible">
+        <strong>{{ passwordResetCtrl.alert.title }}</strong><br>{{ passwordResetCtrl.alert.body }}
+    </div>
+</form>
 </body>
 </html>

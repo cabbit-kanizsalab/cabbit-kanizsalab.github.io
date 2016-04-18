@@ -40,5 +40,22 @@ body {
 }
 
 .form-signin input[type="password"] {
-    margin-bottom: 10px;
+    margin-bottom: 2px;
+}
+
+.ng-invalid {
+    border-color: red;
+    outline-color: red;
+}
+
+.ng-valid {
+    border-color: green;
+    outline-color: green;
+}
+
+.messages {
+    font-size: smaller;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: red;
 }
