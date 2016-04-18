@@ -26,12 +26,12 @@
 
         <h2 class="form-signin-heading">비밀번호 변경</h2>
 
-        <p>아래 창에 새로운 비밀번호를 입력한 후 등록을 클릭하여<br>비밀번호를 변경해 주세요.</p>
+        <p>아래 입력창들에 새로운 비밀번호를 넣고<br>'등록' 버튼을 클릭하세요</p>
         <br>
     </div>
     <div class="form-group">
         <input name="password" ng-model="passwordResetCtrl.user.password"
-               class="form-control" type="password" placeholder="새로운 비밀번호" required
+               class="form-control" type="password" placeholder="새로운 비밀번호 입력" required
                is-password/>
         <div ng-messages="passwordResetForm.password.$error">
             <div ng-messages-include="./messages.html"></div>
@@ -39,7 +39,7 @@
     </div>
     <div class="form-group">
         <input name="confirmPassword" ng-model="passwordResetCtrl.user.confirmPassword"
-               class="form-control" type="password" placeholder="새로운 비밀번호 확인" required
+               class="form-control" type="password" placeholder="위와 똑같이 한번 더 입력" required
                compare-to="passwordResetCtrl.user.password" is-password/>
         <div ng-messages="passwordResetForm.confirmPassword.$error">
             <div ng-messages-include="./messages.html"></div>
@@ -51,7 +51,9 @@
         </button>
     </div>
     <div class="alert" ng-class="passwordResetCtrl.alert.type" role="alert" ng-show="passwordResetCtrl.alert.visible">
-        <strong>{{ passwordResetCtrl.alert.title }}</strong><br>{{ passwordResetCtrl.alert.body }}
+        <div class="text-center">
+            <strong>{{ passwordResetCtrl.alert.title }}</strong><br>{{ passwordResetCtrl.alert.body }}
+        </div>
     </div>
 </form>
 </body>

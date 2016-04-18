@@ -50,18 +50,19 @@
                     method: 'PUT',
                     url: model.host + '/User',
                     headers: {
-                        'Authorization': 'Bearer ' + $scope.accessToken,
+                        'Authorization': 'Bearer ' + model.accessToken,
                         'Content-Type': "application/json; charset=utf8"
                     },
                     data: {
-                        password: $scope.newPassword
+                        password: model.user.password
                     }
                 }).then(function success(response) {
                     model.isReturnToApp = true;
                     model.alert.visible = true;
                     model.alert.type = 'alert-success';
                     model.alert.title = '변경완료';
-                    model.alert.body = '비밀번호 변경을 완료했습니다: 이메일 ' + response.data.email + ' 로 앱에서 다시 로그인해 주세요.';
+                    model.alert.body = '비밀번호 변경을 완료했습니다! 확인 버튼을 눌러 앱으로 돌아간 후 이메일 '
+                        + response.data.email + ' 로 다시 로그인해 주세요.';
                 }, function error(response) {
                     model.isReturnToApp = true;
                     if (401 === response.status) {
