@@ -8,20 +8,19 @@
     },
     "android": {
       "version": [
-        90
+        91
       ],
       "versions": [
-        90
+        91
       ]
     },
     "ios": {
       "versions": [
-        7114,
         8830
       ],
       "version": {
-        "required": "0",
-        "latest": "7114"
+        "required": "8830",
+        "latest": "8830"
       },
       "AppStoreAppID": "1061135784"
     }
