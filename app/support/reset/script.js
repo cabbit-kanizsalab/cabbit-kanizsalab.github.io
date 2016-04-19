@@ -74,7 +74,7 @@
                         model.alert.visible = false;
                         model.alert.type = 'alert-danger';
                         model.alert.title = '죄송합니다';
-                        model.alert.body = '서버 문제로 인해 인증에 실패하였습니다. 캐빗팀에 연락해 주세요 ㅜㅜ';
+                        model.alert.body = '서버 문제로 인해 비밀번호 변경에 실패하였습니다. 캐빗팀에 연락해 주세요 ㅜㅜ';
                         console.log('Failed', response);
                     }
                 })
