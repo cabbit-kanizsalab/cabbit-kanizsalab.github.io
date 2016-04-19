@@ -45,7 +45,7 @@
             model.alert.body = '인증이 진행중입니다. 잠시만 기다려 주세요...';
             $http({
                 method: 'PUT',
-                url: model.host + '/User',
+                url: model.host + '/EmailAuth/verify',
                 headers: {
                     'Authorization': 'Bearer ' + model.accessToken,
                     'Content-Type': "application/json; charset=utf8"
