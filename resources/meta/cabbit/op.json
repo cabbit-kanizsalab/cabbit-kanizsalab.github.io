@@ -8,11 +8,9 @@
     },
     "android": {
       "version": [
-        90,
         100
       ],
       "versions": [
-        90,
         100
       ]
     },
