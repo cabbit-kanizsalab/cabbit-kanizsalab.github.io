@@ -457,4 +457,13 @@ padding: $spacing-unit 0;
       font-size: 18px;
     }
   }
+
+  img {
+    margin: 5px;
+
+    @include media-query($on-palm) {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
