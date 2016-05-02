@@ -20,14 +20,14 @@
     "group": "korea/univ/unist"
   },
   {
-    "name": "지스트",
-    "domain": "gist.ac.kr",
-    "group": "korea/univ/gist"
-  },
-  {
     "name": "중앙대학교",
     "domain": "cau.ac.kr",
     "group": "korea/univ/chungang"
+  },
+  {
+    "name": "지스트",
+    "domain": "gist.ac.kr",
+    "group": "korea/univ/gist"
   },
   {
     "name": "충남대학교",
