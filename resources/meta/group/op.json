@@ -25,6 +25,11 @@
     "group": "korea/univ/gist"
   },
   {
+    "name": "중앙대학교",
+    "domain": "cau.ac.kr",
+    "group": "korea/univ/chungang"
+  },
+  {
     "name": "충남대학교",
     "domain": "cnu.ac.kr",
     "group": "korea/univ/chungnam"
