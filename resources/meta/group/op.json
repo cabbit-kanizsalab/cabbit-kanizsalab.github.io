@@ -5,6 +5,11 @@
     "group": "korea/univ/kaist"
   },
   {
+    "name": "카이스트 경영",
+    "domain": "business.kaist.ac.kr",
+    "group": "korea/univ/kaistbusiness"
+  },  
+  {
     "name": "디지스트",
     "domain": "dgist.ac.kr",
     "group": "korea/univ/dgist"
