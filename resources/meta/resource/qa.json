@@ -71,70 +71,70 @@
             "width": 42,
             "height": 42
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-0.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-0.png"
         },
         "@2x": {
           "size": {
             "width": 84,
             "height": 84
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-0@2x.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-0@2x.png"
         },
         "@3x": {
           "size": {
             "width": 126,
             "height": 126
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-0@3x.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-0@3x.png"
         },
         "ldpi": {
           "size": {
             "width": 32,
             "height": 32
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-0-ldpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-0-ldpi.png"
         },
         "mdpi": {
           "size": {
             "width": 42,
             "height": 42
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-0-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-0-mdpi.png"
         },
         "tvdpi": {
           "size": {
             "width": 56,
             "height": 56
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-0-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-0-mdpi.png"
         },
         "hdpi": {
           "size": {
             "width": 63,
             "height": 63
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-0-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-0-mdpi.png"
         },
         "xhdpi": {
           "size": {
             "width": 84,
             "height": 84
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-0-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-0-mdpi.png"
         },
         "xxhdpi": {
           "size": {
             "width": 126,
             "height": 126
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-0-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-0-mdpi.png"
         },
         "xxxhdpi": {
           "size": {
             "width": 168,
             "height": 168
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-0-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-0-mdpi.png"
         }
       }
     },
@@ -150,70 +150,70 @@
             "width": 42,
             "height": 42
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-1.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-1.png"
         },
         "@2x": {
           "size": {
             "width": 84,
             "height": 84
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-1@2x.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-1@2x.png"
         },
         "@3x": {
           "size": {
             "width": 126,
             "height": 126
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-1@3x.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-1@3x.png"
         },
         "ldpi": {
           "size": {
             "width": 32,
             "height": 32
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-1-ldpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-1-ldpi.png"
         },
         "mdpi": {
           "size": {
             "width": 42,
             "height": 42
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-1-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-1-mdpi.png"
         },
         "tvdpi": {
           "size": {
             "width": 56,
             "height": 56
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-1-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-1-mdpi.png"
         },
         "hdpi": {
           "size": {
             "width": 63,
             "height": 63
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-1-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-1-mdpi.png"
         },
         "xhdpi": {
           "size": {
             "width": 84,
             "height": 84
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-1-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-1-mdpi.png"
         },
         "xxhdpi": {
           "size": {
             "width": 126,
             "height": 126
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-1-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-1-mdpi.png"
         },
         "xxxhdpi": {
           "size": {
             "width": 168,
             "height": 168
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-1-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-1-mdpi.png"
         }
       }
     },
@@ -229,70 +229,70 @@
             "width": 42,
             "height": 42
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-2.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-2.png"
         },
         "@2x": {
           "size": {
             "width": 84,
             "height": 84
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-2@2x.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-2@2x.png"
         },
         "@3x": {
           "size": {
             "width": 126,
             "height": 126
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-2@3x.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-2@3x.png"
         },
         "ldpi": {
           "size": {
             "width": 32,
             "height": 32
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-2-ldpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-2-ldpi.png"
         },
         "mdpi": {
           "size": {
             "width": 42,
             "height": 42
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-2-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-2-mdpi.png"
         },
         "tvdpi": {
           "size": {
             "width": 56,
             "height": 56
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-2-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-2-mdpi.png"
         },
         "hdpi": {
           "size": {
             "width": 63,
             "height": 63
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-2-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-2-mdpi.png"
         },
         "xhdpi": {
           "size": {
             "width": 84,
             "height": 84
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-2-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-2-mdpi.png"
         },
         "xxhdpi": {
           "size": {
             "width": 126,
             "height": 126
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-2-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-2-mdpi.png"
         },
         "xxxhdpi": {
           "size": {
             "width": 168,
             "height": 168
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-2-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-2-mdpi.png"
         }
       }
     },
@@ -308,70 +308,70 @@
             "width": 42,
             "height": 42
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-3.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-3.png"
         },
         "@2x": {
           "size": {
             "width": 84,
             "height": 84
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-3@2x.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-3@2x.png"
         },
         "@3x": {
           "size": {
             "width": 126,
             "height": 126
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-3@3x.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-3@3x.png"
         },
         "ldpi": {
           "size": {
             "width": 32,
             "height": 32
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-3-ldpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-3-ldpi.png"
         },
         "mdpi": {
           "size": {
             "width": 42,
             "height": 42
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-3-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-3-mdpi.png"
         },
         "tvdpi": {
           "size": {
             "width": 56,
             "height": 56
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-3-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-3-mdpi.png"
         },
         "hdpi": {
           "size": {
             "width": 63,
             "height": 63
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-3-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-3-mdpi.png"
         },
         "xhdpi": {
           "size": {
             "width": 84,
             "height": 84
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-3-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-3-mdpi.png"
         },
         "xxhdpi": {
           "size": {
             "width": 126,
             "height": 126
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-3-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-3-mdpi.png"
         },
         "xxxhdpi": {
           "size": {
             "width": 168,
             "height": 168
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-3-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-3-mdpi.png"
         }
       }
     },
@@ -387,70 +387,70 @@
             "width": 42,
             "height": 42
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-4.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-4.png"
         },
         "@2x": {
           "size": {
             "width": 84,
             "height": 84
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-4@2x.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-4@2x.png"
         },
         "@3x": {
           "size": {
             "width": 126,
             "height": 126
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-4@3x.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-4@3x.png"
         },
         "ldpi": {
           "size": {
             "width": 32,
             "height": 32
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-4-ldpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-4-ldpi.png"
         },
         "mdpi": {
           "size": {
             "width": 42,
             "height": 42
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-4-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-4-mdpi.png"
         },
         "tvdpi": {
           "size": {
             "width": 56,
             "height": 56
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-4-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-4-mdpi.png"
         },
         "hdpi": {
           "size": {
             "width": 63,
             "height": 63
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-4-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-4-mdpi.png"
         },
         "xhdpi": {
           "size": {
             "width": 84,
             "height": 84
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-4-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-4-mdpi.png"
         },
         "xxhdpi": {
           "size": {
             "width": 126,
             "height": 126
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-4-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-4-mdpi.png"
         },
         "xxxhdpi": {
           "size": {
             "width": 168,
             "height": 168
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-4-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-4-mdpi.png"
         }
       }
     },
@@ -466,70 +466,70 @@
             "width": 42,
             "height": 42
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-5.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-5.png"
         },
         "@2x": {
           "size": {
             "width": 84,
             "height": 84
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-5@2x.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-5@2x.png"
         },
         "@3x": {
           "size": {
             "width": 126,
             "height": 126
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-5@3x.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-5@3x.png"
         },
         "ldpi": {
           "size": {
             "width": 32,
             "height": 32
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-5-ldpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-5-ldpi.png"
         },
         "mdpi": {
           "size": {
             "width": 42,
             "height": 42
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-5-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-5-mdpi.png"
         },
         "tvdpi": {
           "size": {
             "width": 56,
             "height": 56
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-5-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-5-mdpi.png"
         },
         "hdpi": {
           "size": {
             "width": 63,
             "height": 63
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-5-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-5-mdpi.png"
         },
         "xhdpi": {
           "size": {
             "width": 84,
             "height": 84
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-5-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-5-mdpi.png"
         },
         "xxhdpi": {
           "size": {
             "width": 126,
             "height": 126
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-5-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-5-mdpi.png"
         },
         "xxxhdpi": {
           "size": {
             "width": 168,
             "height": 168
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-5-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-5-mdpi.png"
         }
       }
     },
@@ -545,70 +545,70 @@
             "width": 42,
             "height": 42
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-6.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-6.png"
         },
         "@2x": {
           "size": {
             "width": 84,
             "height": 84
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-6@2x.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-6@2x.png"
         },
         "@3x": {
           "size": {
             "width": 126,
             "height": 126
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-6@3x.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-6@3x.png"
         },
         "ldpi": {
           "size": {
             "width": 32,
             "height": 32
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-6-ldpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-6-ldpi.png"
         },
         "mdpi": {
           "size": {
             "width": 42,
             "height": 42
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-6-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-6-mdpi.png"
         },
         "tvdpi": {
           "size": {
             "width": 56,
             "height": 56
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-6-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-6-mdpi.png"
         },
         "hdpi": {
           "size": {
             "width": 63,
             "height": 63
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-6-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-6-mdpi.png"
         },
         "xhdpi": {
           "size": {
             "width": 84,
             "height": 84
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-6-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-6-mdpi.png"
         },
         "xxhdpi": {
           "size": {
             "width": 126,
             "height": 126
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-6-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-6-mdpi.png"
         },
         "xxxhdpi": {
           "size": {
             "width": 168,
             "height": 168
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-6-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-6-mdpi.png"
         }
       }
     },
@@ -624,70 +624,70 @@
             "width": 42,
             "height": 42
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-7.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-7.png"
         },
         "@2x": {
           "size": {
             "width": 84,
             "height": 84
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-7@2x.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-7@2x.png"
         },
         "@3x": {
           "size": {
             "width": 126,
             "height": 126
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-7@3x.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-7@3x.png"
         },
         "ldpi": {
           "size": {
             "width": 32,
             "height": 32
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-7-ldpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-7-ldpi.png"
         },
         "mdpi": {
           "size": {
             "width": 42,
             "height": 42
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-7-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-7-mdpi.png"
         },
         "tvdpi": {
           "size": {
             "width": 56,
             "height": 56
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-7-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-7-mdpi.png"
         },
         "hdpi": {
           "size": {
             "width": 63,
             "height": 63
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-7-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-7-mdpi.png"
         },
         "xhdpi": {
           "size": {
             "width": 84,
             "height": 84
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-7-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-7-mdpi.png"
         },
         "xxhdpi": {
           "size": {
             "width": 126,
             "height": 126
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-7-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-7-mdpi.png"
         },
         "xxxhdpi": {
           "size": {
             "width": 168,
             "height": 168
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-7-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-7-mdpi.png"
         }
       }
     },
@@ -703,70 +703,70 @@
             "width": 42,
             "height": 42
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-8.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-8.png"
         },
         "@2x": {
           "size": {
             "width": 84,
             "height": 84
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-8@2x.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-8@2x.png"
         },
         "@3x": {
           "size": {
             "width": 126,
             "height": 126
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-8@3x.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-8@3x.png"
         },
         "ldpi": {
           "size": {
             "width": 32,
             "height": 32
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-8-ldpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-8-ldpi.png"
         },
         "mdpi": {
           "size": {
             "width": 42,
             "height": 42
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-8-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-8-mdpi.png"
         },
         "tvdpi": {
           "size": {
             "width": 56,
             "height": 56
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-8-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-8-mdpi.png"
         },
         "hdpi": {
           "size": {
             "width": 63,
             "height": 63
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-8-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-8-mdpi.png"
         },
         "xhdpi": {
           "size": {
             "width": 84,
             "height": 84
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-8-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-8-mdpi.png"
         },
         "xxhdpi": {
           "size": {
             "width": 126,
             "height": 126
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-8-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-8-mdpi.png"
         },
         "xxxhdpi": {
           "size": {
             "width": 168,
             "height": 168
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-8-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-8-mdpi.png"
         }
       }
     },
@@ -782,70 +782,70 @@
             "width": 42,
             "height": 42
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-9.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-9.png"
         },
         "@2x": {
           "size": {
             "width": 84,
             "height": 84
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-9@2x.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-9@2x.png"
         },
         "@3x": {
           "size": {
             "width": 126,
             "height": 126
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-9@3x.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-9@3x.png"
         },
         "ldpi": {
           "size": {
             "width": 32,
             "height": 32
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-9-ldpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-9-ldpi.png"
         },
         "mdpi": {
           "size": {
             "width": 42,
             "height": 42
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-9-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-9-mdpi.png"
         },
         "tvdpi": {
           "size": {
             "width": 56,
             "height": 56
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-9-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-9-mdpi.png"
         },
         "hdpi": {
           "size": {
             "width": 63,
             "height": 63
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-9-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-9-mdpi.png"
         },
         "xhdpi": {
           "size": {
             "width": 84,
             "height": 84
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-9-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-9-mdpi.png"
         },
         "xxhdpi": {
           "size": {
             "width": 126,
             "height": 126
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-9-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-9-mdpi.png"
         },
         "xxxhdpi": {
           "size": {
             "width": 168,
             "height": 168
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-9-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-9-mdpi.png"
         }
       }
     },
@@ -861,70 +861,70 @@
             "width": 42,
             "height": 42
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-10.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-10.png"
         },
         "@2x": {
           "size": {
             "width": 84,
             "height": 84
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-10@2x.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-10@2x.png"
         },
         "@3x": {
           "size": {
             "width": 126,
             "height": 126
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-10@3x.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-10@3x.png"
         },
         "ldpi": {
           "size": {
             "width": 32,
             "height": 32
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-10-ldpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-10-ldpi.png"
         },
         "mdpi": {
           "size": {
             "width": 42,
             "height": 42
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-10-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-10-mdpi.png"
         },
         "tvdpi": {
           "size": {
             "width": 56,
             "height": 56
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-10-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-10-mdpi.png"
         },
         "hdpi": {
           "size": {
             "width": 63,
             "height": 63
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-10-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-10-mdpi.png"
         },
         "xhdpi": {
           "size": {
             "width": 84,
             "height": 84
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-10-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-10-mdpi.png"
         },
         "xxhdpi": {
           "size": {
             "width": 126,
             "height": 126
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-10-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-10-mdpi.png"
         },
         "xxxhdpi": {
           "size": {
             "width": 168,
             "height": 168
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-10-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-10-mdpi.png"
         }
       }
     },
@@ -940,70 +940,70 @@
             "width": 42,
             "height": 42
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-11.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-11.png"
         },
         "@2x": {
           "size": {
             "width": 84,
             "height": 84
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-11@2x.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-11@2x.png"
         },
         "@3x": {
           "size": {
             "width": 126,
             "height": 126
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-11@3x.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-11@3x.png"
         },
         "ldpi": {
           "size": {
             "width": 32,
             "height": 32
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-11-ldpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-11-ldpi.png"
         },
         "mdpi": {
           "size": {
             "width": 42,
             "height": 42
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-11-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-11-mdpi.png"
         },
         "tvdpi": {
           "size": {
             "width": 56,
             "height": 56
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-11-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-11-mdpi.png"
         },
         "hdpi": {
           "size": {
             "width": 63,
             "height": 63
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-11-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-11-mdpi.png"
         },
         "xhdpi": {
           "size": {
             "width": 84,
             "height": 84
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-11-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-11-mdpi.png"
         },
         "xxhdpi": {
           "size": {
             "width": 126,
             "height": 126
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-11-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-11-mdpi.png"
         },
         "xxxhdpi": {
           "size": {
             "width": 168,
             "height": 168
           },
-          "url": "https://cabbit.io/resources/meta/images/profile/default-profile-icon-11-mdpi.png"
+          "url": "https://cabbit.io/resources/images/profile/default-profile-icon-11-mdpi.png"
         }
       }
     }
