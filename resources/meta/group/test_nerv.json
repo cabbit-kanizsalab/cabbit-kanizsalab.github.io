@@ -1,1 +1,31 @@
-{"23456789": "bhlasdfjhla", "asdf": 1465745605.478388}
+[
+  {
+    "name": "카니자랩 테스터",
+    "domain": "kanizsalab.com",
+    "group": "korea/company/kanizsalab"
+  },
+  {
+    "name": "카이스트",
+    "domain": "kaist.ac.kr",
+    "group": "korea/univ/kaist",
+    "tags": ["한국과학기술원", "과기원"]
+  },
+  {
+    "name": "서울대학교",
+    "domain": "snu.ac.kr",
+    "group": "korea/univ/seoul",
+    "tags": ["스누"]
+  },
+  {
+    "name": "울산과기원 (UNIST)",
+    "domain": "unist.ac.kr",
+    "group": "korea/univ/unist",
+    "tags": ["울산과학기술원", "유니스트"]
+  },
+  {
+    "name": "광주과기원 (GIST)",
+    "domain": "gist.ac.kr",
+    "group": "korea/univ/gist",
+    "tags": ["광주과학기술원", "지스트"]
+  }
+]
