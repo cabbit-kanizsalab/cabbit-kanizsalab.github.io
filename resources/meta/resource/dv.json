@@ -2,7 +2,7 @@
   "advertisements": [
     {
       "id": "20160623-0",
-      "url": "https://cabbit.io/advertisement/ad-card-sample.html",
+      "url": "https://cabbit.io/resources/advertisement/ad-card-sample/",
       "startAt": "2016-06-01T00:00:00+09:00",
       "stopAt": "2016-07-30T00:00:00+09:00",
       "image": {
