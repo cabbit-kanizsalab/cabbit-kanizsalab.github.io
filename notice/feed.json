@@ -10,16 +10,10 @@ layout: null
   "lastBuildDate": "{{ site.time | date_to_iso8601 }}",
   "generator": "Jekyll v{{ jekyll.version }}",
   "item": [
-    {% assign isFirst = true %}
-    {% for post in site.posts %}
-    {% unless post.categories contains 'notice' %}{% continue %}{% endunless %}
-    {% unless isFirst %},{% endunless %}
-    {% assign isFirst = false %}
-    {
+    {% assign isFirst = true %}{% for post in site.posts %}{% unless post.categories contains 'notice' %}{% continue %}{% endunless %}{% unless isFirst %},{% endunless %}{% assign isFirst = false %}{
       "title": "{{ post.title | xml_escape }}",
       "pubDate": "{{ post.date | date_to_xmlschema }}",
-      "link": "{{ post.url | prepend: site.baseurl | prepend: site.url }}",
-    }
-    {% endfor %}
+      "link": "{{ post.url | prepend: site.baseurl | prepend: site.url }}"
+    }{% endfor %}
   ]
 }
