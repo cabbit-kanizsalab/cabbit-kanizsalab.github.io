@@ -1,80 +1,80 @@
 {
   "advertisements": [
     {
-      "id": "20160623-0",
-      "url": "https://cabbit.io/resources/advertisement/ad_card_sample/",
-      "startAt": "2016-06-01T00:00:00+09:00",
-      "stopAt": "2016-06-10T00:00:00+09:00",
+      "id": "20160716-0",
+      "url": "https://cabbit.io/notice/2016/07/18/%EC%BA%90%EB%B9%97-%EC%B2%AB-%EC%9D%B4%EC%9A%A9-%EA%B3%A0%EA%B0%9D-%EC%95%84%EC%9D%B4%EC%8A%A4%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B4%EB%85%B8-100-%EC%A6%9D%EC%A0%95.html?embed=true",
+      "startAt": "2016-07-18T00:00:00+09:00",
+      "stopAt": "2016-09-01T00:00:00+09:00",
       "image": {
         "base": {
           "size": {
             "width": 335,
             "height": 335
           },
-          "url": "https://cabbit.io/resources/images/ad-card/ad-card-sample.png"
+          "url": "https://cabbit.io/resources/images/ad-card/20160716-0.png"
         },
         "@2x": {
           "size": {
             "width": 670,
             "height": 670
           },
-          "url": "https://cabbit.io/resources/images/ad-card/ad-card-sample@2x.png"
+          "url": "https://cabbit.io/resources/images/ad-card/20160716-0@2x.png"
         },
         "@3x": {
           "size": {
             "width": 1005,
             "height": 1005
           },
-          "url": "https://cabbit.io/resources/images/ad-card/ad-card-sample@3x.png"
+          "url": "https://cabbit.io/resources/images/ad-card/20160716-0@3x.png"
         },
         "ldpi": {
           "size": {
             "width": 251,
             "height": 251
           },
-          "url": "https://cabbit.io/resources/images/ad-card/ad-card-sample-ldpi.png"
+          "url": "https://cabbit.io/resources/images/ad-card/20160716-0-ldpi.png"
         },
         "mdpi": {
           "size": {
             "width": 335,
             "height": 335
           },
-          "url": "https://cabbit.io/resources/images/ad-card/ad-card-sample-mdpi.png"
+          "url": "https://cabbit.io/resources/images/ad-card/20160716-0-mdpi.png"
         },
         "tvdpi": {
           "size": {
             "width": 446,
             "height": 446
           },
-          "url": "https://cabbit.io/resources/images/ad-card/ad-card-sample-tvdpi.png"
+          "url": "https://cabbit.io/resources/images/ad-card/20160716-0-tvdpi.png"
         },
         "hdpi": {
           "size": {
             "width": 503,
             "height": 503
           },
-          "url": "https://cabbit.io/resources/images/ad-card/ad-card-sample-hdpi.png"
+          "url": "https://cabbit.io/resources/images/ad-card/20160716-0-hdpi.png"
         },
         "xhdpi": {
           "size": {
             "width": 670,
             "height": 670
           },
-          "url": "https://cabbit.io/resources/images/ad-card/ad-card-sample-xhdpi.png"
+          "url": "https://cabbit.io/resources/images/ad-card/20160716-0-xhdpi.png"
         },
         "xxhdpi": {
           "size": {
             "width": 1005,
             "height": 1005
           },
-          "url": "https://cabbit.io/resources/images/ad-card/ad-card-sample-xxhdpi.png"
+          "url": "https://cabbit.io/resources/images/ad-card/20160716-0-xxhdpi.png"
         },
         "xxxhdpi": {
           "size": {
             "width": 1340,
             "height": 1340
           },
-          "url": "https://cabbit.io/resources/images/ad-card/ad-card-sample-xxxhdpi.png"
+          "url": "https://cabbit.io/resources/images/ad-card/20160716-0-xxxhdpi.png"
         }
       }
     }
