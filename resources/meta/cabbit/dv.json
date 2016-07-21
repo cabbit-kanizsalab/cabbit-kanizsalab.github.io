@@ -17,14 +17,8 @@
     },
     "ios": {
       "versions": [
-        8898,
-        9587,
-        9631
+        9894
       ],
-      "version": {
-        "required": "0",
-        "latest": "7114"
-      },
       "AppStoreAppID": "1061135784"
     }
   },
@@ -36,12 +30,6 @@
     "payment": {
       "cycle": 2
     }
-  },
-  "cabbit-point": {
-    "sign-up": 1000,
-    "recommended": 3000,
-    "recommended-by": 3000,
-    "_deprecated": 8531
   },
   "cabbitPoint": {
     "signUp": 1000,
