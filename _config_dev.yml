@@ -1,0 +1,46 @@
+# Site settings
+title: 함께타는 택시풀링 캐빗
+title_short: 캐빗
+email: hello@cabbit.io
+description: 함께 타고, 가격을 나누는 택시풀링 서비스 캐빗
+baseurl: "" # the subpath of your site, e.g. /blog/
+# url: "https://cabbit.io" # the base hostname & protocol for your site
+
+copyright: © 2016 Kanizsa Lab Co., Ltd, All rights reserved
+company_reg_number: 359-87-00053
+online_sales_reg_number: 2015-서울서초-0985호
+ceo_name: 박자람
+privacy_manager: 윤제상 (yoonjs2@kanizsalab.com)
+phone_number: 1661-2365
+address: 서울특별시 서초구 서초대로78길 50, LS-612호 (서초동, 우영빌딩)
+
+socials:
+  - icon: facebook
+    url: "https://www.facebook.com/helloCabbit/"
+  - icon: instagram
+    url: "https://www.instagram.com/helloCabbit/"
+
+download:
+  android:
+    url: "https://play.google.com/store/apps/details?id=io.cabbit&referrer=utm_source%3Dglobal_co%26utm_medium%3Dprtnr%26utm_content%3DMar2515%26utm_campaign%3DPartBadge%26pcampaignid%3DMKT-AC-global-none-all-co-pr-py-PartBadges-Oct1515-1"
+  ios:
+    url: "https://geo.itunes.apple.com/kr/app/kaebis/id1061135784?mt=8"
+
+# twitter_username: jekyllrb
+# github_username:  jekyll
+
+
+# Build settings
+markdown: kramdown
+
+paginate: 3
+paginate_path: "blog/page:num"
+
+gems:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+
+exclude:
+  - "*.key"
+  - "*.sketch"

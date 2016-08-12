@@ -1,12 +1,10 @@
 ---
-layout: page
+layout: policy
 title: 위치기반서비스 이용약관
 category: policy
-css: /css/policy.css
+css: policy
+javscripts: policy
 ---
-
-<link rel="stylesheet" href="/css/policy.css">
-<script src="/scripts/policy.js"></script>
 
 ## 제1조(목적)
 본 약관은 주식회사 카니자랩(Kanizsa Lab Co., Ltd.) (이하 ‘카니자랩’이라 합니다)이 제공하는 위치기반서비스에 관하여 ‘카니자랩’과 ‘캐빗 서비스’ 이용계약을 체결한 고객이 서비스를 이용함에 있어 필요한 권리 및 의무, 기타 제반 사항을 정함을 목적으로 합니다. 한편 캐빗 서비스 이용을 위한 이용약관(기본 이용약관)은 ‘캐빗 웹사이트’([https://cabbit.io](https://cabbit.io))와 애플리케이션 등 전자적 영업장에 공지되어 있습니다.

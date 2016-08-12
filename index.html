@@ -1,283 +1,273 @@
 ---
-layout: home
+layout: default
+section_id: home
+
+slides:
+  - bg: images/slide-background.jpg
+    title:
+      klass: bottom-to-top centered-text
+      text: 함께 타고 요금을 나누는<br/>믿을 수 있는 택시 동행 찾기
+    buttons:
+      klass: bottom-to-top centered-text
+
+about:
+  - title: '사람 사이의 따뜻한 연결<br />CONNECTING PEOPLE'
+    desc: 택시를 함께 타는 것은 자칫 불편할 수 있는 경험이지만, 동시에 비어있던 그 자리를 우연에 내어주는 설렘의 경험이기도 합니다. 당신이 안심하고 그 설렘을 기대할 수 있도록, 우리는 끊임없이 기술을 개발하고 발전시킵니다.
+    icon: connect
+  - title: 새로운 사회 편익<br />REDUCING SOCIAL COST
+    desc: 뉴욕 택시 여정의 88%가 같은 출발지와 목적지를 오가는 탑승객에 의해 만들어집니다. 이들이 연결될 수만 있었다면 대기 시간은 물론 이동 시간도 단축될 수 있었을 것입니다. 새로운 사회의 편익을 만들어가는 길, 당신과 캐빗이 먼저 걸어갑니다.
+    icon: globe
+  - title: 지속가능한 환경<br />SUSTAINABLE ENVIRONMENT
+    desc: 택시를 타고 10km 거리를 '함께' 이동하면 이산화탄소 발생을 2.0kg 감소시킵니다. 이것은 어린 소나무 0.75그루를 심는 것과 동일한 효과를 갖습니다. 맑은 공기를 만드는 이 여정 속에서 캐빗은 우리와 우리 다음 세대를 위한 고민을 이어갑니다.
+    icon: leaf
+
+
+services:
+  - title: STEP 1.<br />출발지/목적지 입력
+    desc: 출발지, 도착지, 탑승시각을 입력합니다<br />희망하는 동행자의 성별도 함께 선택합니다
+    image: service-step-1
+  - title: STEP 2.<br />동행요청
+    desc: 추천 리스트 중<br />나와 가장 잘 맞는 사람에게 동행 요청을 합니다
+    image: service-step-2
+  - title: STEP 3.<br />동행자 만난 후, 역할 선택
+    desc: 캐빗 메신저를 통해 동행자를 만나고,<br />결제 역할도 선택합니다
+    image: service-step-3
+  - title: STEP 4.<br />택시비 결제
+    desc: 하차 시 미터기 금액을 각각 앱에 입력하고<br />자동 분배된 택시비를 확인합니다.<br />영수증은 이메일로 발송됩니다.
+    image: service-step-4
+
+milestones:
+  - icon: users
+    from: 0
+    to: 1335
+    title: 사용자 (명)
+  - icon: won
+    from: 0
+    to: 1235000
+    title: 절약된 택시비 (원)
+  - icon: tree
+    from: 0
+    to: 543
+    title: 감축된 이산화탄소 (kg)
+
+trust_policies:
+  - icon: lock
+    title: 데이터 보안<br />Data Security
+    desc: 캐빗은 금융업계 최고 수준의 3중 암호화 시스템과 피해보상정책을 도입하여 개인정보를 엄격하게 보호하고 있으며, 신속하고 정확한 고객대응을 위하여 1:1상담센터를 운영하고 있습니다.
+  - icon: trust
+    title: 신뢰 네트워크<br />Trust Network
+    desc: 캐빗은 낯선 사람과 함께 택시를 타야 하는 부담 해소를 위해 인공지능 및 빅데이터 매쉬업 기반의 동행자 추천 알고리즘을 개발하여 안심하고 동행할 수 있는 최적의 여정을 제공합니다.
+
+
 ---
 
-<div id="intro" class="card">
-  <div class="card-content aspect-ratio-square">
-    <div class="card-row align-center">
-      <div class="card-column">
-        <div class="logo"></div>
-      </div>
-    </div>
-    <div class="card-row align-center">
-      <div class="card-column">
-        <h1 class="title no-margin">
-          <div class="subtitle">함께 타고, 가격을 나누는</div>
-          <div>택시풀링 서비스</div>
-        </h1>
-      </div>
-    </div>
-    <div class="card-row align-center">
-      <div class="card-column text-align-center">
-        <a href="https://geo.itunes.apple.com/kr/app/kaebis/id1061135784?mt=8" id="app-store" class="button" target="_blank">
-          <img src="images/Download_on_the_App_Store_Badge_KR_135x40.svg" class="appstore" width="135" height="40" />
-        </a>
-        <a href="https://play.google.com/store/apps/details?id=io.cabbit&referrer=utm_source%3Dglobal_co%26utm_medium%3Dprtnr%26utm_content%3DMar2515%26utm_campaign%3DPartBadge%26pcampaignid%3DMKT-AC-global-none-all-co-pr-py-PartBadges-Oct1515-1" id="google-play" class="button" target="_blank">
-          <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/apps/ko-play-badge.png" width="140" height="46" class="playstore"/>
-        </a>
-      </div>
-    </div>
+
+<div class='mod modDefaultSlider'>
+  <div class='sequence' data-autostop='on' data-timeout='0'>
+    <ul class='sequence-canvas'>
+      {% for slide in page.slides %}
+        {% if forloop.first %}
+          {% assign style = 'static' %}
+        {% else %}
+          {% assign style = '' %}
+        {% endif %}
+
+        <li class='frame {{style}} {{slide.klass}}'>
+          <div class='bg' style='background-image: url({{slide.bg}});'></div>
+          <div class='small-title bottom-to-top centered-text'>
+            <div class='row'>
+              <div class='columns'>
+                {% include img.html alt="Logo of Cabbit" name="cabbit-logo" %}
+              </div>
+            </div>
+            <div class='row'>
+              <div class='large-12 columns'>
+                <div class='spacing'></div>
+                <h2>{{ slide.title.text }}</h2>
+                <div class='two spacing'></div>
+              </div>
+            </div>
+          </div>
+          <div class='buttons-wrapper {{ slide.buttons.klass }}'>
+            <div class='row'>
+              <div class='large-12 columns'>
+                <hr style='width: 40px; margin: 0 auto;'>
+                <div class='two spacing'></div>
+                <a id='google-play' class='button download' href='{{ site.download.android.url }}' target="_blank">
+                  {% include img.html alt="Google Play" name="google-play" %}
+                </a>
+                <a id='app-store' class='button download' href='{{ site.download.ios.url }}' target="_blank">
+                  {% include img.html alt="App Store" name="app-store" %}
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
   </div>
 </div>
 
-<div id="card1" class="card green">
-  <div class="card-content aspect-ratio-square">
-    <div class="card-row align-center">
-      <div class="card-column">
-        <div class="taxi"></div>
+<div class="four spacing"></div>
+
+<div class="row">
+  {% for about in page.about %}
+  <div class="medium-4 large-4 columns">
+    <div class='fadein mod modIconText' data-delay='{{ 200 | times:forloop.index0 }}'>
+      <div class='icon-text-circle'>
+        <i class='icon icon-{{ about.icon }}'></i>
+        <h3>{{ about.title }}</h3>
+        <p>{{ about.desc }}</p>
       </div>
+      <div class='two spacing'></div>
     </div>
-    <div class="card-row align-center">
-      <div class="card-column text-align-center">
-        <span class="dark-green">서울 시민이 택시를 기다리며 낭비하는 시간</span><br>
-        <span>하루 19만 7,266시간</span>
+  </div>
+  {% endfor %}
+</div>
+
+
+<div class='full' style="background: #f5f5f5;">
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="처음 만나는 사람과<br />택시를 함께 타는 가장 편안한 방법" tagline="The best way to get to places with people you have just met" tag_color="#9B9B9B" %}
+      <div class='three spacing'></div>
+    </div>
+  </div>
+  <div class='row'>
+    {% for service in page.services %}
+      <div class='large-6 medium-6 columns fadein mod centered-text' data-delay='{{ 200 | times:forloop.index0 }}'>
+        <div class='icon-text-simple'>
+          <h3>{{service.title}}</h3>
+          <p>{{service.desc}}</p>
+          {% include img.html name=service.image %}
+        </div>
+        <div class='two spacing'></div>
       </div>
-    </div>
-    <div class="card-row align-center">
-      <div class="card-column text-align-center">
-        <span class="dark-green">낭비되는 사회적 비용</span><br>
-        <span>하루 24억 7,000만원, 1년 9,016억원</span><br>
-        <span class="caption">[출처: 서울 연구원, 2014 택시 서비스 평가 용역]</span>
-      </div>
-    </div>
-    <div class="card-row align-center">
-      <div class="card-column text-align-center">
-        <div class="rounded-box">
-          <p>
-            <span class="green">택시 기다리는 시간의 평균 1분만 줄여도...<br></span>
-            <span class="dark-green bold">연간 1,143억원 절감!<br></span>
-          </p>
-          <p>
-            <span class="green bold">택시를 </span><span class="red bold">함께</span><span class="green bold"> 타면 어떨까요?</span>
-          </p>
+    {% endfor %}
+  </div>
+  <div class='spacing'></div>
+</div>
+
+
+<!-- <div class='full parallax' style='background-image: url(images/taxi-bg.jpg); color: #fff;'>
+  <div class='row'>
+    {% for milestone in page.milestones %}
+      <div class='medium-4 large-4 columns'>
+        <div class='mod modMilestone'>
+          <i class='icon icon-{{milestone.icon}}'></i>
+          <strong data-from='{{milestone.from}}' data-to='{{milestone.to}}'>&nbsp;</strong>
+          <span>{{milestone.title}}</span>
+          <div class='four spacing'></div>
         </div>
       </div>
+    {% endfor %}
+  </div>
+  <div class='two spacing'></div>
+</div> -->
+
+
+<div class='full'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="캐빗의 신뢰 정책" tagline="Trust Policy" color="#000" tag_color="#9B9B9B" %}
+      <div class='two spacing'></div>
     </div>
   </div>
-</div>
-
-<div id="card2" class="card dark-green">
-  <div class="card-content aspect-ratio-square">
-    <div class="card-row align-center">
-      <div class="card-column">
-        <h2 class="text-align-center no-margin">함께 타고 택시비를 나눠요!</h2>
-        <p class="text-align-center no-margin">
-          <span class="red caption">*택시비 평균 40% 절약*</span>
-        </p>
-      </div>
-    </div>
-    <div class="card-row align-center">
-      <div class="card-column">
-        <div class="ride-width align-center"></div>
-      </div>
-    </div>
-    <div class="card-row align-center">
-      <div class="card-column text-align-center">
-        <span class="bold">Saving<br></span>
-        <span class="red bold">Time, Money, and CO<sub>2</sub><br></span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="card3" class="card green">
-  <div class="card-content aspect-ratio-square no-padding-bottom">
-    <div class="card-row align-center">
-      <div class="card-column">
-        <h2 class="text-align-center no-margin"><span class="white regular">Step1.</span><span class="dark-green"> 출발지/목적지 입력</span></h2>
-      </div>
-    </div>
-    <div class="card-row align-center">
-      <div class="card-column text-align-center">
-        <span>캐빗은 빅데이터 분석을 통해 가장 저렴하고<br></span>
-        <span>빠르게 이동할 수 있는 동행자를 추천합니다.</span>
-      </div>
-    </div>
-    <div class="card-row align-center align-bottom">
-      <div class="card-column text-align-center">
-        <div class="cabbit-app-register-direct align-center"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="card4" class="card dark-green">
-  <div class="card-content aspect-ratio-square no-padding-bottom">
-    <div class="card-row align-center">
-      <div class="card-column">
-        <h2 class="text-align-center no-margin"><span class="white regular">Step2.</span><span class="green"> 동행자 선택</span></h2>
-      </div>
-    </div>
-    <div class="card-row align-center">
-      <div class="card-column text-align-center">
-        <span>캐빗은 같은 학교, 성별을 기반으로<br></span>
-        <span>믿을 수 있는 동행자를 추천합니다.</span>
-      </div>
-    </div>
-    <div class="card-row align-center align-bottom">
-      <div class="card-column text-align-center">
-        <div class="cabbit-app-match-partner align-center"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="card5" class="card green">
-  <div class="card-content aspect-ratio-square no-padding-bottom">
-    <div class="card-row align-center">
-      <div class="card-column">
-        <h2 class="text-align-center no-margin"><span class="white regular">Step3.</span><span class="dark-green"> 40% 할인된 택시비 지불</span></h2>
-      </div>
-    </div>
-    <div class="card-row align-center">
-      <div class="card-column text-align-center">
-        <span>캐빗은 자동 분배/결제 시스템을 제공합니다.<br></span>
-        <span>처음 본 사람과도 편하게 택시비 분배!</span>
-      </div>
-    </div>
-    <div class="card-row align-center align-bottom">
-      <div class="card-column text-align-center">
-        <div class="cabbit-app-payment align-center"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="security" class="card dark-green">
-  <div class="card-content">
-    <div class="card-row align-center">
-      <div class="card-column">
-        <div class="lock"></div>
-      </div>
-      <div class="card-column safe">
-        <div>
-          <span class="bold">안심하세요!</span>
+  <div class='row'>
+    <div class='medium-12 columns'>
+      {% for trust in page.trust_policies %}
+        <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
+          <div class='icon-text-simple'>
+            <i class='icon icon-{{trust.icon}}'></i>
+            <h3>{{trust.title}}</h3>
+            <p>{{trust.desc}}</p>
+          </div>
+          <div class='two spacing'></div>
         </div>
-        <div>
-          <span>고객님의 정보는 철저하게 암호화되어 안전하게 처리됩니다. 캐빗은 고객님 정보를 소중히 보호합니다.</span>
+      {% endfor %}
+    </div>
+  </div>
+  <div class='spacing'></div>
+</div>
+
+
+<div class='full' style='background: #f5f5f5'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="캐빗의  새로운 이야기들" tagline="Recent Stories" color="#000" tag_color="#9B9B9B" %}
+      <div class='two spacing'></div>
+    </div>
+  </div>
+
+  <div class='row'>
+    {% for post in site.posts %}
+      {% unless post.categories contains 'notice' %}{% continue %}{% endunless %}
+      {% if forloop.index > 3 %}
+        {% break %}
+      {% endif %}
+
+      <div class='large-4 medium-4 columns'>
+        <div class='mod modBlogPost'>
+          {% for image in post.images %}
+            {% unless forloop.first %}
+              {% break %}
+            {% endunless %}
+            <a href="{{ post.url }}"><img alt="" src="{{ image | prepend: site.baseurl }}" /></a>
+          {% endfor %}
+          <div class='content'>
+            <p class='date'>{{post.date | date: "%Y-%m-%d" }}</p>
+            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+            <p>{{post.excerpt}}</p>
+          </div>
         </div>
       </div>
+
+    {% endfor %}
+
+  </div>
+
+
+  <div class='two spacing'></div>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <p class='centered-text'>
+        <a class='button' href='{{ "/notice" | preprend: site.baseurl }}'>공지사항 더 보기</a>
+      </p>
     </div>
   </div>
+  <div class='two spacing'></div>
+
 </div>
 
-<div id="about" class="card gray">
-  <div class="card-content">
-    <div class="card-row align-center">
-      <div class="card-column gutter">
-        <div class="kanizsalab-logo align-center"></div>
+
+
+<div class='full'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="카니자랩" tagline="to connect people on Earth and help them<br />trust enough to go together" color="#000" tag_color="#9B9B9B" %}
+      <div class='spacing'></div>
+      <div class="centered-text">
+        카지자랩은 다양한 정형/비정형 데이터를 바탕으로 눈에 보이지 않던 새로운 가치를 발굴하여 세상에 제시하는 기술회사입니다.<br/>온라인-오프라인 데이터 분석과 가치 창조의 미션을 가지고 O2O 서비스에 집중하고 있습니다.
       </div>
+      <div class='two spacing'></div>
     </div>
-    <div class="card-row align-center">
-      <div class="card-column text-align-center gutter">
-        <span class="dark-green">카니자랩은 세상의 다양한 데이터를 기반으로<br></span>
-        <span class="dark-green">이전에 볼 수 없었던 새로운 가치를 발굴하는 기술회사 입니다.</span>
+  </div>
+  <div class='row'>
+    {% for member in site.data.members %}
+      <div class='small-6 medium-3 large-3 columns'>
+        <div class='mod modTeamMember'>
+          <div class='member'>
+            {% include img.html name=member.avatar extension="jpg" %}
+            <div class='overlay'>
+              <a class='intro' href="{{ member.link }}" target="_blank">
+                <h3>{{ member.name }}</h3>
+                <p>{{ member.position }}</p>
+              </div>
+            </a>
+          </div>
+          <div class='two spacing'></div>
+        </div>
       </div>
-    </div>
-    <div class="card-row align-center">
-      <div class="card-column text-align-center gutter">
-        <ul class="members horizontal no-bullet dark-green no-padding align-center">
-          <li>
-            <div>
-              <div class="profile-jaram align-center"></div>
-              <div>
-                <ul class="vertical-center no-bullet text-align-center no-padding">
-                  <li><span class="dark-green bold caption">박자람</span></li>
-                  <li><span class="dark-green caption">CEO</span></li>
-                  <li><span class="dark-green caption">Data Scientist</span></li>
-                  <li><span class="dark-green caption">Ph.D. at KAIST</span></li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div>
-              <div class="profile-shaun align-center"></div>
-              <div>
-                <ul class="vertical-center no-bullet text-align-center no-padding">
-                  <li><span class="dark-green bold caption">박성규</span></li>
-                  <li><span class="dark-green caption">COO</span></li>
-                  <li><span class="dark-green caption">Data Scientist</span></li>
-                  <li><span class="dark-green caption">Ph.D. student at KAIST GSCT</span></li>
-                  <li><span class="dark-green caption">Worked at Samsung Electronics</span></li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div>
-              <div class="profile-jesang align-center"></div>
-              <div>
-                <ul class="vertical-center no-bullet text-align-center no-padding">
-                  <li><span class="dark-green bold caption">윤제상</span></li>
-                  <li><span class="dark-green caption">CTO</span></li>
-                  <li><span class="dark-green caption">Data Engineer</span></li>
-                  <li><span class="dark-green caption">B.S. in CS at SungKyunKwan Univ.</span></li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div>
-              <div class="profile-seoyoung align-center"></div>
-              <div>
-                <ul class="vertical-center no-bullet text-align-center no-padding">
-                  <li><span class="dark-green bold caption">손서영</span></li>
-                  <li><span class="dark-green caption">CDO</span></li>
-                  <li><span class="dark-green caption">KAIST GSCT</span></li>
-                  <li><span class="dark-green caption">Worked at Daehong communications</span></li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div>
-              <div class="profile-jongwon align-center"></div>
-              <div>
-                <ul class="vertical-center no-bullet text-align-center no-padding">
-                  <li><span class="dark-green bold caption">한종원</span></li>
-                  <li><span class="dark-green caption">Developer</span></li>
-                  <li><span class="dark-green caption">M.S in CS at KAIST</span></li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div>
-              <div class="profile-won align-center"></div>
-              <div>
-                <ul class="vertical-center no-bullet text-align-center no-padding">
-                  <li><span class="dark-green bold caption">WON</span></li>
-                  <li><span class="dark-green caption">Developer</span></li>
-                  <li><span class="dark-green caption">B.S in CS at Hongik Univ. </span></li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div>
-              <div class="profile-yoon align-center"></div>
-              <div>
-                <ul class="vertical-center no-bullet text-align-center no-padding">
-                  <li><span class="dark-green bold caption">YOON</span></li>
-                  <li><span class="dark-green caption">Developer</span></li>
-                  <li><span class="dark-green caption">KAIST GSCT</span></li>
-                </ul>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
+    {% endfor %}
   </div>
 </div>

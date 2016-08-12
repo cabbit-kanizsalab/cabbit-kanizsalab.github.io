@@ -2,184 +2,179 @@
 
 ---
 
-a {
-  color: #00897B;
-}
+ol {
+  -webkit-padding-start: 1.6em;
+  position: relative;
 
-.post-header {
-  .post-title {
-    font-size: 26px;
-  }
-}
-
-.post-content {
-  font-size: 0.8em;
-
-  h2 {
-    font-weight: bold;
-    font-size: 1.4em;
-    color: #00897B;
-
-    margin-top: 45px;
-    margin-bottom: 10px;
+  &.h3 {
+    font-size: 0.9em;
+    margin-left: 0;
   }
 
-  h3 {
-    font-weight: bold;
-    font-size: 1.2em;
-    color: #222;
+  &.h4 {
+    font-size: 0.95em;
+    margin-left: 0;
+  }
 
-    margin-top: 1.5em;
-    margin-bottom: 1em;
+  &.circular {
+    counter-reset: circular;
+    list-style: none;
+    *list-style: decimal;
+    margin-left: 1.6em;
+
+    li {
+      &:before {
+        content: counter(circular);
+        counter-increment: circular;
+
+        position: absolute;
+        margin-top: 0.2em;
+        left: 0;
+        width: 1.3em;
+        height: 1.3em;
+        line-height: 1.1em;
+        border-radius: 1.3em;
+        text-align: center;
+        border: 1px solid;
+        font-size: 0.75em;
+      }
+    }
+  }
+
+  &.hangul {
+    list-style: none;
+    *list-style: decimal;
+
+    li {
+      &:before {
+        content: attr(data-index) '.';
+        counter-increment: none;
+
+        position: absolute;
+        margin-top: 0.3em;
+        height: inherit;
+
+        border-radius: 0;
+        text-align: right;
+        border: none;
+        font-size: 1em;
+      }
+    }
+  }
+
+  &.numeric-parenthesis {
+    counter-reset: numeric-parenthesis;
+    list-style: none;
+    *list-style: decimal;
     margin-left: 1em;
-  }
 
-  .h3 {
-    margin-left: 1em;
-  }
+    li {
+      &:before {
+        content: counter(numeric-parenthesis) ')';
+        counter-increment: numeric-parenthesis;
 
-  h4 {
-    font-weight: normal;
-    font-size: 1.1em;
-    color: #222;
-
-    margin-top: 1.5;
-    margin-bottom: 1em;
-    margin-left: 1.5em;
-  }
-
-  .h4 {
-    margin-left: 1.5em;
-  }
-
-  ol {
-    -webkit-padding-start: 1.6em;
-    position: relative;
-
-    &.h3 {
-      font-size: 0.9em;
-      margin-left: 0;
-    }
-
-    &.h4 {
-      font-size: 0.95em;
-      margin-left: 0;
-    }
-
-    &.circular {
-      counter-reset: circular;
-      list-style: none;
-      *list-style: decimal;
-      margin-left: 1.6em;
-
-      li {
-        &:before {
-          content: counter(circular);
-          counter-increment: circular;
-
-          position: absolute;
-          margin-top: 0.2em;
-          left: 0;
-          width: 1.3em;
-          height: 1.3em;
-          line-height: 1.4em;
-          border-radius: 1.3em;
-          text-align: center;
-          border: 1px solid;
-          font-size: 0.75em;
-        }
-      }
-    }
-
-    &.hangul {
-      list-style: none;
-      *list-style: decimal;
-
-      li {
-        &:before {
-          content: attr(data-index) '.';
-          counter-increment: none;
-
-          position: absolute;
-          margin-top: 0;
-          height: inherit;
-
-          border-radius: 0;
-          text-align: right;
-          border: none;
-          font-size: 1em;
-        }
-      }
-    }
-
-    &.numeric-parenthesis {
-      counter-reset: numeric-parenthesis;
-      list-style: none;
-      *list-style: decimal;
-      margin-left: 1em;
-
-      li {
-        &:before {
-          content: counter(numeric-parenthesis) ')';
-          counter-increment: numeric-parenthesis;
-
-          position: absolute;
-          width: 1.2em;
-          text-align: right;
-          left: 0;
-        }
-      }
-    }
-
-    &.hangul-parenthesis {
-      list-style: none;
-      *list-style: decimal;
-
-      li {
-        &:before {
-          content: attr(data-index) ')';
-          counter-increment: none;
-
-          position: absolute;
-          width: 1.2em;
-          text-align: right;
-          left: 0em;
-        }
+        position: absolute;
+        width: 1.2em;
+        text-align: right;
+        left: 0;
       }
     }
   }
 
-}
+  &.hangul-parenthesis {
+    list-style: none;
+    *list-style: decimal;
 
-p {
-  margin: 0;
-}
+    li {
+      &:before {
+        content: attr(data-index) ')';
+        counter-increment: none;
 
-ul {
-  list-style-position: inside;
-
-  p {
-    margin: 0;
+        position: absolute;
+        width: 1.2em;
+        text-align: right;
+        left: 0em;
+      }
+    }
   }
 }
 
-li {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
+// .post-header {
+//   .post-title {
+//     font-size: 26px;
+//   }
+// }
 
-table {
-  border-collapse: collapse;
-}
+// .post-content {
+//   font-size: 0.8em;
+//
+//   h2 {
+//     font-weight: bold;
+//     font-size: 1.4em;
+//     color: #00897B;
+//
+//     margin-top: 45px;
+//     margin-bottom: 10px;
+//   }
+//
+//   h3 {
+//     font-weight: bold;
+//     font-size: 1.2em;
+//     color: #222;
+//
+//     margin-top: 1.5em;
+//     margin-bottom: 1em;
+//     margin-left: 1em;
+//   }
+//
+//   .h3 {
+//     margin-left: 1em;
+//   }
+//
+//   h4 {
+//     font-weight: normal;
+//     font-size: 1.1em;
+//     color: #222;
+//
+//     margin-top: 1.5;
+//     margin-bottom: 1em;
+//     margin-left: 1.5em;
+//   }
+//
+//   .h4 {
+//     margin-left: 1.5em;
+//   }
+// }
 
-table, tr, td, th {
-  border: 1px solid #444;
-}
+// p {
+//   margin: 0;
+// }
 
-th, td {
-  padding: 0.5em;
-}
+// ul {
+//   list-style-position: inside;
+//
+//   p {
+//     margin: 0;
+//   }
+// }
 
-th.one-fifth, td.one-fifth {
-  width: 20%;
-}
+// li {
+//   margin-top: 5px;
+//   margin-bottom: 5px;
+// }
+
+// table {
+//   border-collapse: collapse;
+// }
+
+// table, tr, td, th {
+//   border: 1px solid #444;
+// }
+
+// th, td {
+//   padding: 0.5em;
+// }
+
+// th.one-fifth, td.one-fifth {
+//   width: 20%;
+// }

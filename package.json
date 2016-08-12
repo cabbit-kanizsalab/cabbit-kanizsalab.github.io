@@ -1,0 +1,19 @@
+{
+  "name": "cabbit.io",
+  "version": "1.0.0",
+  "description": "https://github.com/Shopify/liquid/wiki/Liquid-for-Designers",
+  "main": "index.html",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.5.2"
+  }
+}

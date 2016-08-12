@@ -1,55 +1,24 @@
 ---
-layout: default
-title: 공지사항
-category: notice
-show_in_navigation: true
+layout: notice
+title: "캐빗의  새로운 이야기들"
+section_id: notice
 ---
 
-<div class="card">
-  <div class="card-content">
-    <div class="card-row">
-      <div class="card-column">
-        <h2 class="title no-margin">공지사항</h2>
-      </div>
+{% for post in paginator.posts %}{% if post.categories contains 'notice' %}
+  <div class='row big mod modBlogPost'>
+    <div class='large-3 medium-3 columns images'>
+      {% for image in post.images %}
+        <div class='image'><img alt="" src="{{ image | prepend: site.baseurl }}" /></div>
+      {% endfor %}
+    </div>
+    <div class='large-9 medium-9 columns content'>
+      <p class='info'>
+        <span>{{post.date | date: "%Y-%m-%d" }}</span>
+      </p>
+      <h3><a href="{{ post.url }}">{{post.title}}</a></h3>
+      <p>{{ post.excerpt }}</p>
+      <div class='spacing'></div>
+      <a class="button small" href="{{ post.url }}">더 보기</a>
     </div>
   </div>
-</div>
-
-{% if site.posts[0] != null %}
-{% for post in site.posts %}
-  {% if post.categories contains 'notice' %}
-  <hr />
-
-	<div class="post card notice">
-    <div class="card-content">
-      <div class="card-row">
-        <div class="card-column">
-          <h3 class="title no-margin"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-          <p class="post-meta">
-            <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">작성일: {{ post.date | date: "%Y-%m-%d" }}</time>
-            {% if post.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span></span>{% endif %}
-          </p>
-          <p class="entry">
-            {{ post.content | strip_html | truncatewords: 15 }}
-          </p>
-        </div>
-      </div>
-    </div>
-	</div>
-  {% endif %}
-{% endfor %}
-{% else %}
-  <hr />
-
-  <div class="post card">
-    <div class="card-content">
-      <div class="card-row">
-        <div class="card-column">
-          <p>
-            등록된 글이 없습니다.
-          </p>
-        </div>
-      </div>
-    </div>
-	</div>
-{% endif %}
+{% endif %}{% endfor %}
