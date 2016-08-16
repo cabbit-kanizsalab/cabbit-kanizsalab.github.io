@@ -1,66 +1,66 @@
-<footer id="footer" class="site-footer card dark-green">
-
-  <div class="card-content">
-
-    <div class="card-row">
-      <div class="card-column gutter caption">
-        <span>주식회사 카니자랩</span>
-      </div>
+<div id='footer'>
+  <div class='three spacing'></div>
+  <div class='row'>
+    <div class='large-5 medium-5 columns'>
+      <h1>
+        <a href='{{ "index.html" | prepend: site.baseurl }}'>
+          {% include img.html alt="Logo of Cabbit" name="cabbit-logo-typo-white" %}
+        </a>
+      </h1>
+      <p>
+        주식회사 카니자랩<br />
+        {{site.copyright}}
+      </p>
+      <div class="spacing"></div>
+      <a id='google-play-footer' class='button download' href='{{ site.download.android.url }}' target="_blank">
+        {% include img.html alt="Google Play" name="google-play" %}
+      </a>
+      <a id='app-store-footer' class='button download' href='{{ site.download.ios.url }}' target="_blank">
+        {% include img.html alt="App Store" name="app-store" %}
+      </a>
     </div>
-
-    <div class="card-row">
-      <div class="card-column gutter caption">
-        <span>{{ site.copyright }}</span>
-      </div>
+    <div class='large-3 medium-3 columns'>
+      <div class='spacing'></div>
+      <ul class="terms">
+        <li><a href="{{ "/policy/terms.html" | prepend: site.baseurl }}">서비스 이용약관</a></li>
+        <li><a href="{{ "/policy/location.html" | prepend: site.baseurl }}">위치기반서비스 이용약관</a></li>
+        <li><a href="{{ "/policy/privacy.html" | prepend: site.baseurl }}">개인정보취급방침</a></li>
+        <li><a href="{{ "/policy/privacy-consignment.html" | prepend: site.baseurl }}">개인정보 취급 위탁</a></li>
+      </ul>
+      <div class="spacing"></div>
+      <ul class="socials">
+        {% for social in site.socials %}
+        <li>
+          <a href='{{ social.url }}' target='_blank'>
+            <i class='icon icon-{{ social.icon }}'></i>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+      <div class="two spacing"></div>
     </div>
-
-    <div class="card-row">
-      <div class="card-column gutter caption">
-        <ul class="horizontal-inline no-bullet no-padding no-margin">
-          <li>
-            <span><a href="/policy/terms.html">이용약관</a></span>
-          </li>
-          <li>
-            <span><a href="/policy/location.html">위치기반서비스 이용약관</a></span>
-          </li>
-          <li>
-            <span><a href="/policy/privacy.html">개인정보취급방침</a></span>
-          </li>
-          <li>
-            <span><a href="/policy/privacy-consignment.html">개인정보 취급 위탁</a></span>
-          </li>
-        </ul>
-      </div>
+    <div class='large-4 medium-4 columns'>
+      <div class='spacing'></div>
+      <ul>
+        <li>대표전화: {{ site.phone_number }}</li>
+        <li>이메일: <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        <li>주소: {{ site.address }}</li>
+      </ul>
+      <div class='spacing'></div>
+      <ul>
+        <li>(주)카니자랩 대표자: {{ site.ceo_name }}</li>
+        <li>사업자등록번호: {{ site.company_reg_number }}</li>
+        <li>통신판매업 신고번호: {{ site.online_sales_reg_number }}</li>
+        <li>개인정보관리책임자: {{ site.privacy_manager }}</li>
+      </ul>
+      <div class='two spacing'></div>
     </div>
-
-    <div class="card-row">
-      <div class="card-column gutter caption">
-        <ul class="horizontal-inline no-bullet no-padding no-margin">
-          <li>
-            <span>사업자등록번호: 359-87-00053</span>
-          </li>
-          <li>
-            <span>통신판매업 신고번호: 2015-서울서초-0985호</span>
-          </li>
-          <li>
-            <span>대표자: 박자람</span>
-          </li>
-          <li>
-            <span>개인정보관리책임자: 윤제상 (yoonjs2@kanizsalab.com)</span>
-          </li>
-          <li>
-            <span>주소: 서울특별시 서초구 서초대로78길 50, LS-612호 (서초동, 우영빌딩)</span>
-          </li>
-          <li>
-            <span>대표전화(고객만족센터): 1661-2365</span>
-          </li>
-          <li>
-            <span>이메일: <a href="mailto:{{ site.email }}">{{ site.email }}</a></span>
-          </li>
-        </ul>
-      </div>
-    </div>
-
   </div>
-
-</footer>
+  <div class='two spacing'></div>
+</div>
+<script src="{{ "/javascripts/jquery.countTo.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ "/javascripts/jquery.appear.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ "/javascripts/jquery.validate.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ "/javascripts/jquery.sequence-min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ "/javascripts/jquery.easing.1.3.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+<script src="{{ "/javascripts/app.js" | prepend: site.baseurl }}" type="text/javascript"></script>

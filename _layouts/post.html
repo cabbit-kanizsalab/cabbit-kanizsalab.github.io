@@ -1,23 +1,25 @@
 ---
-layout: default
+layout: notice
+section_id: notice
 ---
 
-<article class="post card" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="card-content">
-    <header class="card-row post-header">
-      <div class="card-column">
-        <h2 class="post-title no-margin" itemprop="name headline">{{ page.title }}</h2>
-        <p class="post-meta">
-          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">작성일: {{ page.date | date: "%Y-%m-%d" }}</time>
-          {% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
-        </p>
-      </div>
-    </header>
 
-    <div class="card-row post-content" itemprop="articleBody">
-      <div class="card-column">
+<div class='row'>
+  <div class='large-12 columns'>
+    <div class='mod modBlogPost big'>
+      <div class='content'>
+        <p class='info'>
+          <span>{{page.date | date: "%Y-%m-%d" }}</span>
+        </p>
+        <h3>{{page.title}}</h3>
         {{ content }}
       </div>
+      <div class='images-noslide'>
+        {% for image in page.images %}
+          <div class='image'><img alt="" src="{{ image | prepend: site.baseurl }}" /></div>
+        {% endfor %}
+      </div>
     </div>
+    <div class='four spacing'></div>
   </div>
-</article>
+</div>

@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+
+<div class='full parallax'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="캐빗의  새로운 이야기들" tagline="Recent Stories" color="#000" class="big" %}
+    </div>
+  </div>
+  <div class='two spacing'></div>
+</div>
+
+
+<div class='full' style='background: #f5f5f5'>
+  {{ content }}
+
+  {% if paginator %}
+  <div class='row'>
+    <div class='large-12 columns'>
+        <div class="pager">
+          {% if paginator.next_page %}
+            {% if paginator.next_page == 1 %}
+              <a href="/notice" class="older">이전 글</a>
+            {% else %}
+              <a href="/notice/page{{ paginator.next_page }}" class="older">이전 글</a>
+            {% endif %}
+          {% endif %}
+          {% if paginator.previous_page %}
+            {% if paginator.previous_page == 1 %}
+              <a href="/notice" class="newer">다음 글</a>
+            {% else %}
+              <a href="/notice/page{{ paginator.previous_page }}" class="newer">다음 글</a>
+            {% endif %}
+          {% endif %}
+        </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <div class='four spacing'></div>
+
+</div>

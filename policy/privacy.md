@@ -1,12 +1,10 @@
 ---
-layout: page
+layout: policy
 title: 개인정보취급방침
 category: policy
-css: /css/policy.css
+css: policy
+javscripts: policy
 ---
-
-<link rel="stylesheet" href="/css/policy.css">
-<script src="/scripts/policy.js"></script>
 
 이용자 여러분, 캐빗 접속을 환영합니다! 주식회사 카니자랩(Kanizsa Lab Co., Ltd.)(이하 ‘카니자랩’이라 합니다)은 이용자 여러분의 개인정보를 안전하게 보호하기 위하여 최선을 다하고 있습니다.
 {: .h1}

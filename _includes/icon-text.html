@@ -1,0 +1,13 @@
+<div class='fadein mod modIconText' data-delay='{{ include.delay }}'>
+  <div class='{{ include.shape_class }}'>
+    {%if include.image %}
+    <img srcset="{{site.url}}/images/{{include.image}}.png 1x, {{site.url}}/images/{{include.image}}@2x.png 2x, {{site.url}}/images/{{include.image}}@3x.png 3x" alt="{{include.img_alt}}" class='{{include.img_class}}'>
+    {%else%}
+    <i class='{{ include.icon_class }}'></i>
+    {%endif%}
+    <h3>{{ include.title }}</h3>
+    <p>{{ include.desc }}</p>
+    <p class='source'>{{ include.source }}</p>
+  </div>
+  <div class='two spacing'></div>
+</div>

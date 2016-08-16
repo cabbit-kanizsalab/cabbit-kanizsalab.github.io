@@ -1,12 +1,10 @@
 ---
-layout: page
+layout: policy
 title: 이용 약관
 category: policy
-css: /css/policy.css
+css: policy
+javscripts: policy
 ---
-
-<link rel="stylesheet" href="/css/policy.css">
-<script src="/scripts/policy.js"></script>
 
 ## 제1장 총칙
 
