@@ -1,0 +1,156 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+# https://github.com/jekyll/jekyll-sass-converter/tree/master/example
+---
+
+// @charset "utf-8"
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+a {
+  color: #00897B;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+  background-color: #00BFA5;
+}
+
+.icon {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* You can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.modDefaultSlider .sequence .animate-in {
+  .title.bottom-to-top {
+    top: 45px;
+  }
+
+  .small-title.bottom-to-top {
+    top: 45px;
+  }
+
+  .buttons-wrapper.bottom-to-top {
+    top: 45px;
+  }
+}
+
+.modSectionHeader {
+  .special-title h2::before {
+    content: "";
+    width: 40px;
+    margin: 0 auto;
+    height: 2px;
+    background: #00BFA5;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .special-title h2::after {
+    height: 0;
+  }
+
+  .sequence {
+    height: 400px;
+
+    .bg {
+      background-position: 50% 15%;
+    }
+  }
+}
+
+
+.modTeamMember {
+  ul.desc {
+    li::after {
+      content: '|';
+    }
+    li:last-child::after {
+      content: ''
+    }
+  }
+}
+
+
+.modMilestone {
+  i {
+    background: #00BFA5;
+    padding: 26px 0;
+  }
+  span {
+    text-transform: none;
+  }
+}
+
+.modIconText {
+  .icon-text-circle:hover i {
+    color: #00BFA5;
+  }
+
+  .icon-text-simple {
+    i.icon-lock {
+      margin-left: 0.1em;
+    }
+    .text-icon {
+      float: left;
+      font-size: 3rem;
+      font-weight: bold;
+      width: 48px;
+      height: 48px;
+      text-align: center;
+      margin-left: 15px;
+    }
+  }
+}
+
+[class*="column"] + [class*="column"]:last-child {
+  float: left;
+}
+
+.button {
+  background: #00BFA5;
+  border: 2px solid #00BFA5;
+
+  &.download {
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    margin-right: 0;
+    margin: 0.1rem;
+  }
+}
+
+.button:hover {
+  background-color: rgba(0, 191, 196, 0.8);
+}
+
+i.icon.icon-trust {
+  font-size: 2.4rem;
+}
+
+#footer ul.socials a:hover i {
+  background: #00BFA5;
+}
