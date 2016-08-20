@@ -13,7 +13,7 @@
     },
     "ios": {
       "versions": [
-        9894
+        10054
       ],
       "AppStoreAppID": "1061135784"
     }
@@ -34,6 +34,6 @@
   },
   "taxiMeterCost": {
     "max": 100000,
-	"min": 2800
+    "min": 2800
   }
 }
