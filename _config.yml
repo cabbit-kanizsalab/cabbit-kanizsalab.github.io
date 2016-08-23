@@ -4,7 +4,7 @@ title_short: 캐빗
 email: hello@cabbit.io
 description: 함께 타고, 가격을 나누는 택시풀링 서비스 캐빗
 baseurl: "" # the subpath of your site, e.g. /blog/
-# url: "https://cabbit.io" # the base hostname & protocol for your site
+url: "https://cabbit.io" # the base hostname & protocol for your site
 
 copyright: © 2016 Kanizsa Lab Co., Ltd, All rights reserved
 company_reg_number: 359-87-00053
