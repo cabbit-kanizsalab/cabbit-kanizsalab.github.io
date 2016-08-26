@@ -1,4 +1,17 @@
 {
+  "signup": {
+    "indivisualEmails" : [
+      "naver.com",
+      "daum.net",
+      "nate.com",
+      "gmail.com",
+      "hanmail.net",
+      "hotmail.com",
+      "yahoo.co.kr",
+      "chol.com",
+      "empal.com"
+    ]
+  },
   "tips": [
     {
       "type": "text",
