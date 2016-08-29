@@ -2,7 +2,7 @@
   path: index.html
   section_id: home
 - name: 자주 묻는 질문들
-  path: faq.html
+  path: faq/
   section_id: faq
 - name: 캐빗의 새로운 이야기들
   path: notice/
