@@ -74,6 +74,7 @@
       "id": "20160901-0",
       "url": "https://cabbit.io/notice/2016/09/01/지금-여정등록하면-100-연결.html?embed=true",
       "startAt": "2016-09-01T00:00:00+09:00",
+      "stopAt": "2099-09-01T00:00:00+09:00",
       "image": {
         "base": {
           "size": {
