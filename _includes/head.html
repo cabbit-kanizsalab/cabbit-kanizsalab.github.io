@@ -3,6 +3,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta name="apple-itunes-app" content="app-id=1061135784">
+  <meta name="google-play-app" content="app-id=io.cabbit">
+
+  <!-- Start SmartBanner configuration -->
+  <meta name="smartbanner:title" content="캐빗(Cabbit)">
+  <meta name="smartbanner:author" content="Kanizsa Lab">
+  <meta name="smartbanner:price" content="무료">
+  <meta name="smartbanner:price-suffix-apple" content=" - App Store에서 다운로드">
+  <meta name="smartbanner:price-suffix-google" content=" - Google Play에서 다운로드">
+  <meta name="smartbanner:icon-apple" content="http://a4.mzstatic.com/us/r30/Purple71/v4/36/cd/12/36cd1228-362f-bfa6-3456-b89fe24c072e/icon100x100.png">
+  <meta name="smartbanner:icon-google" content="https://lh3.googleusercontent.com/TqaOCVY-FOqBHU1V43Q9EOeyxPvXq6OPePZYh7QCX1ukYrj2g7duTs5hIq4AR-hzTA=w100">
+  <meta name="smartbanner:button" content="보기">
+  <meta name="smartbanner:button-url-apple" content="cabbit://home">
+  <meta name="smartbanner:button-url-google" content="cabbit://home">
+  <!-- End SmartBanner configuration -->
+
+  <meta name="google-site-verification" content="8ngKcZov2d558kQ9oIYya-F-zZan-DWMPV51fMjxoI8" />
+  <meta name="naver-site-verification" content="93e5ad7079026faafd33a7f7ed310f172a496bfe"/>
+
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
@@ -11,6 +30,7 @@
   <link rel="stylesheet" href="{{ "/css/fontello.css" | prepend: site.baseurl }}">
   <!-- <link rel="stylesheet" href="{{ "/css/font-awesome.css" | prepend: site.baseurl }}"> -->
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/smartbanner.min.css" | prepend: site.baseurl }}">
   <script src="{{ "/javascripts/libs.js" | prepend: site.baseurl }}" type="text/javascript"></script>
   <script>
     // terrificjs bootstrap
