@@ -1450,6 +1450,7 @@ form input.error, form textarea.error {
   font-style: italic;
 }
 .modBlogPost img {
+  width: auto;
   max-width: 100%;
 }
 .modBlogPost a:hover img {
