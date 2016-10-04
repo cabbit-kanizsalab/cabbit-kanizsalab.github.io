@@ -31,6 +31,12 @@
   <!-- <link rel="stylesheet" href="{{ "/css/font-awesome.css" | prepend: site.baseurl }}"> -->
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/smartbanner.min.css" | prepend: site.baseurl }}">
+  {% if page.css %}
+    {% for css in page.css %}
+    <link rel="stylesheet" href="/css/{{ css }}.css" media="screen" type="text/css">
+    {% endfor %}
+  {% endif %}
+
   <script src="{{ "/javascripts/libs.js" | prepend: site.baseurl }}" type="text/javascript"></script>
   <script>
     // terrificjs bootstrap
@@ -54,7 +60,8 @@
   analytics.page()
   }}();
   </script>
-  <link href="http://fonts.googleapis.com/css?family=Raleway:400,700,300" media="screen" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="http://wcs.naver.net/wcslog.js"></script>
+  <script type="text/javascript"> if(!wcs_add) var wcs_add = {}; wcs_add["wa"] = "994a78f542e2ec"; wcs_do(); </script>
   <script src="{{ "/javascripts/masonry.pkgd.js" | prepend: site.baseurl }}" type="text/javascript"></script>
   <script src="{{ "/javascripts/imagesloaded.pkgd.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
   <script src="{{ "/javascripts/slick.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
@@ -65,15 +72,9 @@
   <script src="{{ "/javascripts/picturefill.min.js" | prepend: site.baseurl }}" type="text/javascript" async></script>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-
-{% if page.css %}
-  {% for css in page.css %}
-  <link rel="stylesheet" href="/css/{{ css }}.css" media="screen" type="text/css">
-  {% endfor %}
-{% endif %}
-{% if page.javscripts %}
-  {% for javascript in page.javscripts %}
-  <script src='/javascripts/{{ javascript }}.js' type="text/javascript"></script>
-  {% endfor %}
-{% endif %}
-</head>
+  {% if page.javscripts %}
+    {% for javascript in page.javscripts %}
+    <script src='/javascripts/{{ javascript }}.js' type="text/javascript"></script>
+    {% endfor %}
+  {% endif %}
+  </head>
