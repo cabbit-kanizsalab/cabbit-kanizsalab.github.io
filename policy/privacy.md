@@ -251,7 +251,7 @@ javscripts: policy
 ‘카니자랩’은 신고사항에 대해 신속하고 충분한 답변을 드릴 수 있도록 노력할 것입니다.
 {: .h2}
 
-- 개인정보 관리책임자: 박자람
+- 개인정보 관리책임자: {{ site.privacy_manager }}
 - 개인정보 담당부서: 고객상담센터
 - 고객상담센터 전화번호: 1661-2365
 - 연락처 E-mail: <a href="mailto:hello@cabbit.io">hello@cabbit.io</a>
