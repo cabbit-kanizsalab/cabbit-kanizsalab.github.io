@@ -1,21 +1,13 @@
 {
   "client": {
-    "alert": {
-      "startAt": "2016-04-09T22:00:00+09:00",
-      "stopAt": "2016-04-11T00:00:00+09:00",
-      "title": "제목",
-      "message": "테스트!!!"
-    },
     "android": {
       "versions": [
-        120,
-        123,
-        127
+        132
       ]
     },
     "ios": {
       "versions": [
-        10054
+        10553
       ],
       "AppStoreAppID": "1061135784"
     }
