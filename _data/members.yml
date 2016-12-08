@@ -8,11 +8,6 @@
   position: Obsessive COO, Co-Founder
   link: "https://www.linkedin.com/in/shaun01"
 
-- avatar: "profile-jesang"
-  name: 윤제상
-  position: Learning CTO, Co-Founder
-  link: "https://www.linkedin.com/in/jesangyoon"
-
 - avatar: "profile-seyoung"
   name: 손서영
   position: Designer with love
@@ -27,11 +22,6 @@
   name: YOON
   position: Humble Analytics Developer
 
-- avatar: "profile-jongwon"
-  name: 한종원
-  position: Elastic DevOps Engineer
-  link: "https://www.linkedin.com/in/addnull/"
-
 - avatar: "profile-suyeon"
   name: 조수연
   position: Comm. Designer with love
@@ -42,12 +32,22 @@
   position: Cabbitern with byung-mot
   link: "https://www.linkedin.com/in/cjswork7030"
 
-- avatar: "profile-jaehong"
-  name: 안재홍
-  position: Cabbitern with free mind
-  link : "https://www.linkedin.com/in/jaehong830"
-
 - avatar: "profile-jinyoung"
   name: 김진영
   position: Bright cabbitern
   link: "https://www.linkedin.com/in/jinyoung-kim-730649123"
+
+#- avatar: "profile-jesang"
+#  name: 윤제상
+#  position: Learning CTO, Co-Founder
+#  link: "https://www.linkedin.com/in/jesangyoon"
+
+#- avatar: "profile-jongwon"
+#  name: 한종원
+#  position: Elastic DevOps Engineer
+#  link: "https://www.linkedin.com/in/addnull/"
+
+#- avatar: "profile-jaehong"
+#  name: 안재홍
+#  position: Cabbitern with free mind
+#  link : "https://www.linkedin.com/in/jaehong830"
