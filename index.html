@@ -2,6 +2,10 @@
 layout: default
 section_id: home
 
+goodbye:
+  bg: goodbye
+  link: "/notice/2017/01/09/서비스종료-캐빗을-아껴주신-모든-분들께-감사의-말씀을-드립니다.html"
+
 slides:
   - bg: images/slide-background.jpg
     title:
@@ -9,10 +13,6 @@ slides:
       text: 함께 타고 요금을 나누는<br/>믿을 수 있는 택시 동행 찾기
     buttons:
       klass: bottom-to-top centered-text
-
-goodbyes:
-  - bg: images/goodbye.jpg
-    link: "/notice/2017/01/09/서비스종료-캐빗을-아껴주신-모든-분들께-감사의-말씀을-드립니다.html"
 
 about:
   - title: '사람 사이의 따뜻한 연결<br />CONNECTING PEOPLE'
@@ -65,24 +65,10 @@ trust_policies:
 
 ---
 
-<div class='mod modDefaultSlider'>
-  <div class='sequence' data-autostop='on' data-timeout='0'>
-    <ul class='sequence-canvas'>
-      {% for goodbye in page.goodbyes %}
-        {% if forloop.first %}
-          {% assign style = 'static' %}
-        {% else %}
-          {% assign style = '' %}
-        {% endif %}
-
-        <li class='frame {{style}} {{goodbye.klass}}'>
-          <a href="{{ goodbye.link | preoend: site.baseurl }}">
-            <div class='bg' style='background-image: url({{goodbye.bg}});'></div>
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
+<div class='goodbye'>
+  <a href="{{ page.goodbye.link | prepend: site.baseurl }}" style="display: block;">
+    {% include img.html name=page.goodbye.bg extension="jpg" style="width: 100%; height: auto;" %}
+  </a>
 </div>
 
 <div class="four spacing"></div>
